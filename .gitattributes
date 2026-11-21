@@ -1,0 +1,8 @@
+# The matching build needs LF: CRLF breaks backslash-continued macros
+# (libs/sony-sdk/include/libm/fdlibm.h, libs/sony-sdk/src/libc/fvwrite_k.h) and drops those functions to assembly.
+* text=auto eol=lf
+# Screenshots in docs/screenshots/ are binary
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.webp -text

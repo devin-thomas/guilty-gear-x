@@ -1,0 +1,1344 @@
+{
+ "game": "Guilty Gear X (PS2, US SLUS-202.87)",
+ "gate": "build.py --target us: the full ELF rebuilds byte-identical (SHA-256 7e8000d17ba3c74c4793147d5a5dae57c4b1911439b0f9a91a9f8e79461eefc9) and every counted function is linked from C",
+ "compiler": "EE-GCC 2.9-ee-991111-01 cc1, -O2 -G8; GAS 2.9-ee-991111 (ee-gcc2.9-991111-01-dtls13010) for game code, SCE GAS 2.10 for object and cp_obj (scripts/sdkprofile.py)",
+ "game_code": {
+  "functions": {
+   "matched": 3266,
+   "total": 3266
+  },
+  "bytes": {
+   "matched": 611804,
+   "total": 611804
+  },
+  "files": {
+   "matched": 116,
+   "total": 116
+  }
+ },
+ "sdk": {
+  "functions": {
+   "matched": 409,
+   "total": 581
+  },
+  "bytes": {
+   "matched": 101620,
+   "total": 107960
+  },
+  "files": {
+   "matched": 72,
+   "total": 96
+  }
+ },
+ "sdk_source": "libs/sony-sdk (build.py --sdk-tree)",
+ "denominator": "Census functions of SLUS_202.87 (us/census.csv); bytes exclude alignment padding. Game code is every function outside the sdk/ translation units. A file is one translation unit; it counts when all its functions are C.",
+ "c_functions_not_linked": [],
+ "tu_data_left_in_bins": [
+  "build/src/ggxeuc/actchk/RespectCommnadCheck.o:.data.F0",
+  "build/src/ggxeuc/actsub/GetEntryOrder.o:.data.F0",
+  "ggxeuc/an_act",
+  "ggxeuc/ane_act",
+  "ggxeuc/ax_act",
+  "ggxeuc/axe_act",
+  "ggxeuc/ch_act",
+  "ggxeuc/che_act",
+  "ggxeuc/game",
+  "ggxeuc/ky_act",
+  "ggxeuc/kye_act",
+  "ggxeuc/mainctrl",
+  "ggxeuc/memacc",
+  "ggxeuc/ml_act",
+  "ggxeuc/mle_act",
+  "ggxeuc/my_act",
+  "ggxeuc/mye_act",
+  "ggxeuc/playdat",
+  "ggxeuc/select",
+  "ggxeuc/skillref",
+  "ggxeuc/sl_act",
+  "ggxeuc/sle_act",
+  "ggxeuc/sound",
+  "ggxeuc/survival",
+  "ggxeuc/throw",
+  "ggxeuc/title",
+  "ggxeuc/vs",
+  "sdk/sce/eecdvd",
+  "sdk/sce/eeloadfile",
+  "sdk/sce/libdma",
+  "sdk/sce/libmc",
+  "sdk/sce/libpad"
+ ],
+ "by_tu": {
+  "ggxeuc/act": {
+   "matched": 82,
+   "total": 82,
+   "matched_bytes": 9312,
+   "total_bytes": 9312
+  },
+  "ggxeuc/actchk": {
+   "matched": 26,
+   "total": 26,
+   "matched_bytes": 8080,
+   "total_bytes": 8080
+  },
+  "ggxeuc/actsub": {
+   "matched": 73,
+   "total": 73,
+   "matched_bytes": 9276,
+   "total_bytes": 9276
+  },
+  "ggxeuc/actsub2": {
+   "matched": 40,
+   "total": 40,
+   "matched_bytes": 1896,
+   "total_bytes": 1896
+  },
+  "ggxeuc/afterimg": {
+   "matched": 5,
+   "total": 5,
+   "matched_bytes": 724,
+   "total_bytes": 724
+  },
+  "ggxeuc/allinit": {
+   "matched": 7,
+   "total": 7,
+   "matched_bytes": 1152,
+   "total_bytes": 1152
+  },
+  "ggxeuc/ampack": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 96,
+   "total_bytes": 96
+  },
+  "ggxeuc/an_act": {
+   "matched": 59,
+   "total": 59,
+   "matched_bytes": 5032,
+   "total_bytes": 5032
+  },
+  "ggxeuc/ane_act": {
+   "matched": 13,
+   "total": 13,
+   "matched_bytes": 1488,
+   "total_bytes": 1488
+  },
+  "ggxeuc/ax_act": {
+   "matched": 61,
+   "total": 61,
+   "matched_bytes": 5116,
+   "total_bytes": 5116
+  },
+  "ggxeuc/axe_act": {
+   "matched": 23,
+   "total": 23,
+   "matched_bytes": 5016,
+   "total_bytes": 5016
+  },
+  "ggxeuc/bg": {
+   "matched": 28,
+   "total": 28,
+   "matched_bytes": 9020,
+   "total_bytes": 9020
+  },
+  "ggxeuc/bgsub": {
+   "matched": 19,
+   "total": 19,
+   "matched_bytes": 7860,
+   "total_bytes": 7860
+  },
+  "ggxeuc/bk_act": {
+   "matched": 46,
+   "total": 46,
+   "matched_bytes": 4500,
+   "total_bytes": 4500
+  },
+  "ggxeuc/bke_act": {
+   "matched": 18,
+   "total": 18,
+   "matched_bytes": 1000,
+   "total_bytes": 1000
+  },
+  "ggxeuc/ch_act": {
+   "matched": 85,
+   "total": 85,
+   "matched_bytes": 7552,
+   "total_bytes": 7552
+  },
+  "ggxeuc/chase": {
+   "matched": 10,
+   "total": 10,
+   "matched_bytes": 3392,
+   "total_bytes": 3392
+  },
+  "ggxeuc/che_act": {
+   "matched": 19,
+   "total": 19,
+   "matched_bytes": 1968,
+   "total_bytes": 1968
+  },
+  "ggxeuc/cmn_act": {
+   "matched": 102,
+   "total": 102,
+   "matched_bytes": 11184,
+   "total_bytes": 11184
+  },
+  "ggxeuc/cmn_se": {
+   "matched": 13,
+   "total": 13,
+   "matched_bytes": 948,
+   "total_bytes": 948
+  },
+  "ggxeuc/cockpit": {
+   "matched": 19,
+   "total": 19,
+   "matched_bytes": 7424,
+   "total_bytes": 7424
+  },
+  "ggxeuc/colli": {
+   "matched": 26,
+   "total": 26,
+   "matched_bytes": 8340,
+   "total_bytes": 8340
+  },
+  "ggxeuc/cp_act": {
+   "matched": 11,
+   "total": 11,
+   "matched_bytes": 1024,
+   "total_bytes": 1024
+  },
+  "ggxeuc/cp_obj": {
+   "matched": 5,
+   "total": 5,
+   "matched_bytes": 876,
+   "total_bytes": 876
+  },
+  "ggxeuc/cpu": {
+   "matched": 36,
+   "total": 36,
+   "matched_bytes": 10248,
+   "total_bytes": 10248
+  },
+  "ggxeuc/credit": {
+   "matched": 24,
+   "total": 24,
+   "matched_bytes": 3624,
+   "total_bytes": 3624
+  },
+  "ggxeuc/dcfont": {
+   "matched": 8,
+   "total": 8,
+   "matched_bytes": 3252,
+   "total_bytes": 3252
+  },
+  "ggxeuc/diagram": {
+   "matched": 20,
+   "total": 20,
+   "matched_bytes": 1604,
+   "total_bytes": 1604
+  },
+  "ggxeuc/dz_act": {
+   "matched": 32,
+   "total": 32,
+   "matched_bytes": 2816,
+   "total_bytes": 2816
+  },
+  "ggxeuc/dze_act": {
+   "matched": 58,
+   "total": 58,
+   "matched_bytes": 11416,
+   "total_bytes": 11416
+  },
+  "ggxeuc/eff_act": {
+   "matched": 38,
+   "total": 38,
+   "matched_bytes": 6708,
+   "total_bytes": 6708
+  },
+  "ggxeuc/effect": {
+   "matched": 8,
+   "total": 8,
+   "matched_bytes": 1688,
+   "total_bytes": 1688
+  },
+  "ggxeuc/ending": {
+   "matched": 7,
+   "total": 7,
+   "matched_bytes": 3800,
+   "total_bytes": 3800
+  },
+  "ggxeuc/fa_act": {
+   "matched": 85,
+   "total": 85,
+   "matched_bytes": 9672,
+   "total_bytes": 9672
+  },
+  "ggxeuc/fade": {
+   "matched": 14,
+   "total": 14,
+   "matched_bytes": 700,
+   "total_bytes": 700
+  },
+  "ggxeuc/fae_act": {
+   "matched": 33,
+   "total": 33,
+   "matched_bytes": 4072,
+   "total_bytes": 4072
+  },
+  "ggxeuc/fight": {
+   "matched": 94,
+   "total": 94,
+   "matched_bytes": 29896,
+   "total_bytes": 29896
+  },
+  "ggxeuc/file": {
+   "matched": 13,
+   "total": 13,
+   "matched_bytes": 2460,
+   "total_bytes": 2460
+  },
+  "ggxeuc/finish": {
+   "matched": 18,
+   "total": 18,
+   "matched_bytes": 6128,
+   "total_bytes": 6128
+  },
+  "ggxeuc/g_graph": {
+   "matched": 12,
+   "total": 12,
+   "matched_bytes": 7332,
+   "total_bytes": 7332
+  },
+  "ggxeuc/g_grasub": {
+   "matched": 5,
+   "total": 5,
+   "matched_bytes": 552,
+   "total_bytes": 552
+  },
+  "ggxeuc/g_grasys": {
+   "matched": 26,
+   "total": 26,
+   "matched_bytes": 2084,
+   "total_bytes": 2084
+  },
+  "ggxeuc/g_strip": {
+   "matched": 35,
+   "total": 35,
+   "matched_bytes": 8388,
+   "total_bytes": 8388
+  },
+  "ggxeuc/game": {
+   "matched": 22,
+   "total": 22,
+   "matched_bytes": 9460,
+   "total_bytes": 9460
+  },
+  "ggxeuc/gcalc": {
+   "matched": 5,
+   "total": 5,
+   "matched_bytes": 128,
+   "total_bytes": 128
+  },
+  "ggxeuc/gcl": {
+   "matched": 14,
+   "total": 14,
+   "matched_bytes": 1384,
+   "total_bytes": 1384
+  },
+  "ggxeuc/graph": {
+   "matched": 9,
+   "total": 9,
+   "matched_bytes": 1472,
+   "total_bytes": 1472
+  },
+  "ggxeuc/guardp": {
+   "matched": 10,
+   "total": 10,
+   "matched_bytes": 2028,
+   "total_bytes": 2028
+  },
+  "ggxeuc/jm_act": {
+   "matched": 85,
+   "total": 85,
+   "matched_bytes": 9528,
+   "total_bytes": 9528
+  },
+  "ggxeuc/jme_act": {
+   "matched": 33,
+   "total": 33,
+   "matched_bytes": 3816,
+   "total_bytes": 3816
+  },
+  "ggxeuc/job": {
+   "matched": 4,
+   "total": 4,
+   "matched_bytes": 88,
+   "total_bytes": 88
+  },
+  "ggxeuc/jy_act": {
+   "matched": 66,
+   "total": 66,
+   "matched_bytes": 6276,
+   "total_bytes": 6276
+  },
+  "ggxeuc/jye_act": {
+   "matched": 25,
+   "total": 25,
+   "matched_bytes": 3488,
+   "total_bytes": 3488
+  },
+  "ggxeuc/key": {
+   "matched": 82,
+   "total": 82,
+   "matched_bytes": 8024,
+   "total_bytes": 8024
+  },
+  "ggxeuc/ky_act": {
+   "matched": 50,
+   "total": 50,
+   "matched_bytes": 4020,
+   "total_bytes": 4020
+  },
+  "ggxeuc/kye_act": {
+   "matched": 13,
+   "total": 13,
+   "matched_bytes": 1284,
+   "total_bytes": 1284
+  },
+  "ggxeuc/main": {
+   "matched": 3,
+   "total": 3,
+   "matched_bytes": 584,
+   "total_bytes": 584
+  },
+  "ggxeuc/mainctrl": {
+   "matched": 9,
+   "total": 9,
+   "matched_bytes": 1156,
+   "total_bytes": 1156
+  },
+  "ggxeuc/memacc": {
+   "matched": 9,
+   "total": 9,
+   "matched_bytes": 2276,
+   "total_bytes": 2276
+  },
+  "ggxeuc/memory": {
+   "matched": 19,
+   "total": 19,
+   "matched_bytes": 4356,
+   "total_bytes": 4356
+  },
+  "ggxeuc/meter": {
+   "matched": 4,
+   "total": 4,
+   "matched_bytes": 748,
+   "total_bytes": 748
+  },
+  "ggxeuc/ml_act": {
+   "matched": 54,
+   "total": 54,
+   "matched_bytes": 5040,
+   "total_bytes": 5040
+  },
+  "ggxeuc/mle_act": {
+   "matched": 45,
+   "total": 45,
+   "matched_bytes": 6552,
+   "total_bytes": 6552
+  },
+  "ggxeuc/my_act": {
+   "matched": 58,
+   "total": 58,
+   "matched_bytes": 5656,
+   "total_bytes": 5656
+  },
+  "ggxeuc/mye_act": {
+   "matched": 38,
+   "total": 38,
+   "matched_bytes": 3764,
+   "total_bytes": 3764
+  },
+  "ggxeuc/nameentr": {
+   "matched": 4,
+   "total": 4,
+   "matched_bytes": 1240,
+   "total_bytes": 1240
+  },
+  "ggxeuc/nllib": {
+   "matched": 8,
+   "total": 8,
+   "matched_bytes": 712,
+   "total_bytes": 712
+  },
+  "ggxeuc/object": {
+   "matched": 9,
+   "total": 9,
+   "matched_bytes": 3700,
+   "total_bytes": 3700
+  },
+  "ggxeuc/objwork": {
+   "matched": 38,
+   "total": 38,
+   "matched_bytes": 5280,
+   "total_bytes": 5280
+  },
+  "ggxeuc/opening": {
+   "matched": 36,
+   "total": 36,
+   "matched_bytes": 9388,
+   "total_bytes": 9388
+  },
+  "ggxeuc/opt_ajst": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 1368,
+   "total_bytes": 1368
+  },
+  "ggxeuc/opt_cfg": {
+   "matched": 9,
+   "total": 9,
+   "matched_bytes": 4868,
+   "total_bytes": 4868
+  },
+  "ggxeuc/opt_main": {
+   "matched": 6,
+   "total": 6,
+   "matched_bytes": 2512,
+   "total_bytes": 2512
+  },
+  "ggxeuc/opt_rec": {
+   "matched": 5,
+   "total": 5,
+   "matched_bytes": 2760,
+   "total_bytes": 2760
+  },
+  "ggxeuc/opt_vm": {
+   "matched": 16,
+   "total": 16,
+   "matched_bytes": 10528,
+   "total_bytes": 10528
+  },
+  "ggxeuc/packet": {
+   "matched": 18,
+   "total": 18,
+   "matched_bytes": 2152,
+   "total_bytes": 2152
+  },
+  "ggxeuc/pad": {
+   "matched": 4,
+   "total": 4,
+   "matched_bytes": 1232,
+   "total_bytes": 1232
+  },
+  "ggxeuc/playdat": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 1352,
+   "total_bytes": 1352
+  },
+  "ggxeuc/player": {
+   "matched": 15,
+   "total": 15,
+   "matched_bytes": 9996,
+   "total_bytes": 9996
+  },
+  "ggxeuc/plcolchk": {
+   "matched": 23,
+   "total": 23,
+   "matched_bytes": 10812,
+   "total_bytes": 10812
+  },
+  "ggxeuc/po_act": {
+   "matched": 64,
+   "total": 64,
+   "matched_bytes": 5488,
+   "total_bytes": 5488
+  },
+  "ggxeuc/poe_act": {
+   "matched": 14,
+   "total": 14,
+   "matched_bytes": 896,
+   "total_bytes": 896
+  },
+  "ggxeuc/poly_eff": {
+   "matched": 36,
+   "total": 36,
+   "matched_bytes": 18708,
+   "total_bytes": 18708
+  },
+  "ggxeuc/polydraw": {
+   "matched": 10,
+   "total": 10,
+   "matched_bytes": 1896,
+   "total_bytes": 1896
+  },
+  "ggxeuc/profile": {
+   "matched": 5,
+   "total": 5,
+   "matched_bytes": 4420,
+   "total_bytes": 4420
+  },
+  "ggxeuc/pxf": {
+   "matched": 27,
+   "total": 27,
+   "matched_bytes": 11228,
+   "total_bytes": 11228
+  },
+  "ggxeuc/random": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 36,
+   "total_bytes": 36
+  },
+  "ggxeuc/replay": {
+   "matched": 39,
+   "total": 39,
+   "matched_bytes": 10964,
+   "total_bytes": 10964
+  },
+  "ggxeuc/score": {
+   "matched": 15,
+   "total": 15,
+   "matched_bytes": 2372,
+   "total_bytes": 2372
+  },
+  "ggxeuc/screen": {
+   "matched": 30,
+   "total": 30,
+   "matched_bytes": 3796,
+   "total_bytes": 3796
+  },
+  "ggxeuc/select": {
+   "matched": 32,
+   "total": 32,
+   "matched_bytes": 18472,
+   "total_bytes": 18472
+  },
+  "ggxeuc/sin": {
+   "matched": 10,
+   "total": 10,
+   "matched_bytes": 728,
+   "total_bytes": 728
+  },
+  "ggxeuc/skillref": {
+   "matched": 4,
+   "total": 4,
+   "matched_bytes": 2620,
+   "total_bytes": 2620
+  },
+  "ggxeuc/sl_act": {
+   "matched": 69,
+   "total": 69,
+   "matched_bytes": 6112,
+   "total_bytes": 6112
+  },
+  "ggxeuc/sle_act": {
+   "matched": 19,
+   "total": 19,
+   "matched_bytes": 1636,
+   "total_bytes": 1636
+  },
+  "ggxeuc/sobj_act": {
+   "matched": 62,
+   "total": 62,
+   "matched_bytes": 10036,
+   "total_bytes": 10036
+  },
+  "ggxeuc/sound": {
+   "matched": 38,
+   "total": 38,
+   "matched_bytes": 3444,
+   "total_bytes": 3444
+  },
+  "ggxeuc/soundnew": {
+   "matched": 24,
+   "total": 24,
+   "matched_bytes": 2028,
+   "total_bytes": 2028
+  },
+  "ggxeuc/sprite": {
+   "matched": 43,
+   "total": 43,
+   "matched_bytes": 15740,
+   "total_bytes": 15740
+  },
+  "ggxeuc/stgsel": {
+   "matched": 10,
+   "total": 10,
+   "matched_bytes": 13520,
+   "total_bytes": 13520
+  },
+  "ggxeuc/survival": {
+   "matched": 42,
+   "total": 42,
+   "matched_bytes": 14400,
+   "total_bytes": 14400
+  },
+  "ggxeuc/system": {
+   "matched": 12,
+   "total": 12,
+   "matched_bytes": 1004,
+   "total_bytes": 1004
+  },
+  "ggxeuc/tension": {
+   "matched": 17,
+   "total": 17,
+   "matched_bytes": 4032,
+   "total_bytes": 4032
+  },
+  "ggxeuc/text": {
+   "matched": 7,
+   "total": 7,
+   "matched_bytes": 1408,
+   "total_bytes": 1408
+  },
+  "ggxeuc/throw": {
+   "matched": 72,
+   "total": 72,
+   "matched_bytes": 8944,
+   "total_bytes": 8944
+  },
+  "ggxeuc/title": {
+   "matched": 18,
+   "total": 18,
+   "matched_bytes": 6668,
+   "total_bytes": 6668
+  },
+  "ggxeuc/training": {
+   "matched": 35,
+   "total": 35,
+   "matched_bytes": 7412,
+   "total_bytes": 7412
+  },
+  "ggxeuc/ts_act": {
+   "matched": 41,
+   "total": 41,
+   "matched_bytes": 3516,
+   "total_bytes": 3516
+  },
+  "ggxeuc/tse_act": {
+   "matched": 27,
+   "total": 27,
+   "matched_bytes": 6748,
+   "total_bytes": 6748
+  },
+  "ggxeuc/ve_act": {
+   "matched": 54,
+   "total": 54,
+   "matched_bytes": 4940,
+   "total_bytes": 4940
+  },
+  "ggxeuc/vee_act": {
+   "matched": 35,
+   "total": 35,
+   "matched_bytes": 6268,
+   "total_bytes": 6268
+  },
+  "ggxeuc/vs": {
+   "matched": 8,
+   "total": 8,
+   "matched_bytes": 6832,
+   "total_bytes": 6832
+  },
+  "ggxeuc/vsctrl": {
+   "matched": 31,
+   "total": 31,
+   "matched_bytes": 3712,
+   "total_bytes": 3712
+  },
+  "ggxeuc/winner": {
+   "matched": 25,
+   "total": 25,
+   "matched_bytes": 14916,
+   "total_bytes": 14916
+  },
+  "ggxeuc/zt_act": {
+   "matched": 49,
+   "total": 49,
+   "matched_bytes": 5164,
+   "total_bytes": 5164
+  },
+  "ggxeuc/zte_act": {
+   "matched": 31,
+   "total": 31,
+   "matched_bytes": 3956,
+   "total_bytes": 3956
+  },
+  "sdk/asm/klib": {
+   "matched": 0,
+   "total": 137,
+   "matched_bytes": 0,
+   "total_bytes": 2192
+  },
+  "sdk/asm/memchr": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 224
+  },
+  "sdk/asm/memcmp": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 148
+  },
+  "sdk/asm/memcpy": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 176
+  },
+  "sdk/asm/memmove": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 260
+  },
+  "sdk/asm/memset": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 192
+  },
+  "sdk/asm/strcat": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 300
+  },
+  "sdk/asm/strcmp": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 324
+  },
+  "sdk/asm/strcpy": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 276
+  },
+  "sdk/asm/strlen": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 312
+  },
+  "sdk/asm/strncpy": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 444
+  },
+  "sdk/crt0": {
+   "matched": 0,
+   "total": 4,
+   "matched_bytes": 0,
+   "total_bytes": 192
+  },
+  "sdk/gcc/_divdi3": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 1772,
+   "total_bytes": 1772
+  },
+  "sdk/gcc/_fixunsdfdi": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 236,
+   "total_bytes": 236
+  },
+  "sdk/gcc/_floatdidf": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 152,
+   "total_bytes": 152
+  },
+  "sdk/gcc/_floatdisf": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 224,
+   "total_bytes": 224
+  },
+  "sdk/gcc/_main": {
+   "matched": 0,
+   "total": 3,
+   "matched_bytes": 0,
+   "total_bytes": 292
+  },
+  "sdk/gcc/_moddi3": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 1640,
+   "total_bytes": 1640
+  },
+  "sdk/gcc/_udivdi3": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 1488,
+   "total_bytes": 1488
+  },
+  "sdk/gcc/_umoddi3": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 1344,
+   "total_bytes": 1344
+  },
+  "sdk/gcc/dp_bit": {
+   "matched": 15,
+   "total": 15,
+   "matched_bytes": 3288,
+   "total_bytes": 3288
+  },
+  "sdk/gcc/fp_bit": {
+   "matched": 16,
+   "total": 16,
+   "matched_bytes": 3104,
+   "total_bytes": 3104
+  },
+  "sdk/libm/e_atan2": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 820,
+   "total_bytes": 820
+  },
+  "sdk/libm/e_rem_pio2": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 1308,
+   "total_bytes": 1308
+  },
+  "sdk/libm/e_sqrt": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 772,
+   "total_bytes": 772
+  },
+  "sdk/libm/k_cos": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 588,
+   "total_bytes": 588
+  },
+  "sdk/libm/k_rem_pio2": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 2920,
+   "total_bytes": 2920
+  },
+  "sdk/libm/k_sin": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 468,
+   "total_bytes": 468
+  },
+  "sdk/libm/s_atan": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 1036,
+   "total_bytes": 1036
+  },
+  "sdk/libm/s_copysign": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 68,
+   "total_bytes": 68
+  },
+  "sdk/libm/s_fabs": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 52,
+   "total_bytes": 52
+  },
+  "sdk/libm/s_floor": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 472,
+   "total_bytes": 472
+  },
+  "sdk/libm/s_isinf": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 72,
+   "total_bytes": 72
+  },
+  "sdk/libm/s_isnan": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 56,
+   "total_bytes": 56
+  },
+  "sdk/libm/s_matherr": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 36,
+   "total_bytes": 36
+  },
+  "sdk/libm/s_scalbn": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 436,
+   "total_bytes": 436
+  },
+  "sdk/libm/s_sin": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 244,
+   "total_bytes": 244
+  },
+  "sdk/libm/w_atan2": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 280,
+   "total_bytes": 280
+  },
+  "sdk/libm/w_sqrt": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 268,
+   "total_bytes": 268
+  },
+  "sdk/newlib/closer": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 88,
+   "total_bytes": 88
+  },
+  "sdk/newlib/dtoa": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 5088,
+   "total_bytes": 5088
+  },
+  "sdk/newlib/errno": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 12
+  },
+  "sdk/newlib/fflush": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 260,
+   "total_bytes": 260
+  },
+  "sdk/newlib/findfp": {
+   "matched": 4,
+   "total": 6,
+   "matched_bytes": 564,
+   "total_bytes": 588
+  },
+  "sdk/newlib/fstatr": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 92,
+   "total_bytes": 92
+  },
+  "sdk/newlib/fvwrite": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 984,
+   "total_bytes": 984
+  },
+  "sdk/newlib/fwalk": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 148,
+   "total_bytes": 148
+  },
+  "sdk/newlib/locale": {
+   "matched": 3,
+   "total": 4,
+   "matched_bytes": 212,
+   "total_bytes": 224
+  },
+  "sdk/newlib/lseekr": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 96,
+   "total_bytes": 96
+  },
+  "sdk/newlib/makebuf": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 336,
+   "total_bytes": 336
+  },
+  "sdk/newlib/malloc": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 56,
+   "total_bytes": 56
+  },
+  "sdk/newlib/mallocr": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 2508,
+   "total_bytes": 2508
+  },
+  "sdk/newlib/mallocr_calloc": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 188,
+   "total_bytes": 188
+  },
+  "sdk/newlib/mallocr_free": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 1160,
+   "total_bytes": 1160
+  },
+  "sdk/newlib/mbtowc_r": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 60,
+   "total_bytes": 60
+  },
+  "sdk/newlib/mlock": {
+   "matched": 2,
+   "total": 4,
+   "matched_bytes": 140,
+   "total_bytes": 156
+  },
+  "sdk/newlib/mprec": {
+   "matched": 17,
+   "total": 17,
+   "matched_bytes": 4100,
+   "total_bytes": 4100
+  },
+  "sdk/newlib/rand": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 64,
+   "total_bytes": 64
+  },
+  "sdk/newlib/readr": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 96
+  },
+  "sdk/newlib/sbrkr": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 92,
+   "total_bytes": 92
+  },
+  "sdk/newlib/sprintf": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 216,
+   "total_bytes": 216
+  },
+  "sdk/newlib/stdio": {
+   "matched": 4,
+   "total": 4,
+   "matched_bytes": 364,
+   "total_bytes": 364
+  },
+  "sdk/newlib/vfprintf": {
+   "matched": 6,
+   "total": 6,
+   "matched_bytes": 6424,
+   "total_bytes": 6424
+  },
+  "sdk/newlib/writer": {
+   "matched": 0,
+   "total": 1,
+   "matched_bytes": 0,
+   "total_bytes": 96
+  },
+  "sdk/newlib/wsetup": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 268,
+   "total_bytes": 268
+  },
+  "sdk/sce/cache": {
+   "matched": 4,
+   "total": 6,
+   "matched_bytes": 288,
+   "total_bytes": 616
+  },
+  "sdk/sce/deci2": {
+   "matched": 10,
+   "total": 10,
+   "matched_bytes": 448,
+   "total_bytes": 448
+  },
+  "sdk/sce/devgif": {
+   "matched": 10,
+   "total": 10,
+   "matched_bytes": 680,
+   "total_bytes": 680
+  },
+  "sdk/sce/devvif0": {
+   "matched": 8,
+   "total": 8,
+   "matched_bytes": 804,
+   "total_bytes": 804
+  },
+  "sdk/sce/devvu0": {
+   "matched": 13,
+   "total": 13,
+   "matched_bytes": 1024,
+   "total_bytes": 1024
+  },
+  "sdk/sce/diei": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 96,
+   "total_bytes": 96
+  },
+  "sdk/sce/eecdvd": {
+   "matched": 21,
+   "total": 21,
+   "matched_bytes": 4844,
+   "total_bytes": 4844
+  },
+  "sdk/sce/eecdvd_geterror": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 152,
+   "total_bytes": 152
+  },
+  "sdk/sce/eecdvd_read": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 480,
+   "total_bytes": 480
+  },
+  "sdk/sce/eecdvd_stop": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 176,
+   "total_bytes": 176
+  },
+  "sdk/sce/eeloadfile": {
+   "matched": 16,
+   "total": 18,
+   "matched_bytes": 3220,
+   "total_bytes": 3388
+  },
+  "sdk/sce/filestub": {
+   "matched": 38,
+   "total": 38,
+   "matched_bytes": 13600,
+   "total_bytes": 13600
+  },
+  "sdk/sce/glue": {
+   "matched": 16,
+   "total": 16,
+   "matched_bytes": 804,
+   "total_bytes": 804
+  },
+  "sdk/sce/graph_putdispenv": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 188,
+   "total_bytes": 188
+  },
+  "sdk/sce/graph_resetgraph": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 412,
+   "total_bytes": 412
+  },
+  "sdk/sce/graph_resetpath": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 728,
+   "total_bytes": 728
+  },
+  "sdk/sce/graph_setdefdrawenv": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 484,
+   "total_bytes": 484
+  },
+  "sdk/sce/graph_syncpath": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 788,
+   "total_bytes": 788
+  },
+  "sdk/sce/graph_syncv": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 148,
+   "total_bytes": 148
+  },
+  "sdk/sce/graph_zbufaddr": {
+   "matched": 1,
+   "total": 1,
+   "matched_bytes": 200,
+   "total_bytes": 200
+  },
+  "sdk/sce/initsys": {
+   "matched": 2,
+   "total": 2,
+   "matched_bytes": 108,
+   "total_bytes": 108
+  },
+  "sdk/sce/intr": {
+   "matched": 11,
+   "total": 13,
+   "matched_bytes": 828,
+   "total_bytes": 860
+  },
+  "sdk/sce/iopreset": {
+   "matched": 4,
+   "total": 4,
+   "matched_bytes": 684,
+   "total_bytes": 684
+  },
+  "sdk/sce/kprintf": {
+   "matched": 8,
+   "total": 8,
+   "matched_bytes": 2420,
+   "total_bytes": 2420
+  },
+  "sdk/sce/libdma": {
+   "matched": 17,
+   "total": 17,
+   "matched_bytes": 2736,
+   "total_bytes": 2736
+  },
+  "sdk/sce/libmc": {
+   "matched": 25,
+   "total": 26,
+   "matched_bytes": 5980,
+   "total_bytes": 6016
+  },
+  "sdk/sce/libpad": {
+   "matched": 30,
+   "total": 30,
+   "matched_bytes": 4972,
+   "total_bytes": 4972
+  },
+  "sdk/sce/sifcmd": {
+   "matched": 14,
+   "total": 17,
+   "matched_bytes": 1640,
+   "total_bytes": 1828
+  },
+  "sdk/sce/sifrpc": {
+   "matched": 22,
+   "total": 22,
+   "matched_bytes": 3892,
+   "total_bytes": 3892
+  },
+  "sdk/sce/thread": {
+   "matched": 5,
+   "total": 5,
+   "matched_bytes": 852,
+   "total_bytes": 852
+  },
+  "sdk/sce/tty": {
+   "matched": 7,
+   "total": 7,
+   "matched_bytes": 1292,
+   "total_bytes": 1292
+  }
+ }
+}

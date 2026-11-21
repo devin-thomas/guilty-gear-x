@@ -1,0 +1,6647 @@
+{
+ "format": "sony-sdk-export/1",
+ "build": "ggx-us",
+ "game": "Guilty Gear X",
+ "serial": "SLUS-202.87",
+ "elf": "SLUS_202.87",
+ "elf_sha1": "16c49b835681fc24b9878ebda21bd74893c2c693",
+ "sdk_release": "2.3.0",
+ "library_tags": {
+  "libgraph": "2300",
+  "libdma": "2300",
+  "libpad": "2300",
+  "libcdvd": "2300",
+  "libmc": "2300",
+  "libkernl": "2300"
+ },
+ "summary": {
+  "functions": {
+   "matched": 413,
+   "total": 575
+  },
+  "bytes": {
+   "matched": 101676,
+   "total": 107772
+  },
+  "files": {
+   "matched": 77,
+   "total": 96
+  },
+  "unassigned_functions": 6
+ },
+ "link_rules": {
+  "function_alignment": "none: SDK functions follow each other as in the archive member; do not ALIGN(8) between them",
+  "padding": "keep each object's trailing padding (layout.pad_bytes) as data words or asm; members pad to 16 or more, and some start at 4 mod 8",
+  "relocations": "matches are relocation-masked; data and symbol references are the game build's own byte gate"
+ },
+ "objects": [
+  {
+   "lib": "libgraph",
+   "object": "graph_resetgraph",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libgraph/graph_resetgraph.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": false,
+   "matched": 2,
+   "total": 4,
+   "layout": {
+    "start": "0x00197058",
+    "code_end": "0x001AAD14",
+    "end": "0x001AAD18",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sceGsResetGraph",
+     "addr": "0x00197058",
+     "size": 400,
+     "matched": true,
+     "c_name": "sceGsResetGraph"
+    },
+    {
+     "name": "sceGsGetGParam",
+     "addr": "0x001971E8",
+     "size": 12,
+     "matched": true,
+     "c_name": "sceGsGetGParam"
+    },
+    {
+     "name": "sceGsGetGParam",
+     "addr": "0x001A70A0",
+     "size": 12,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "sceGsGetGParam",
+     "addr": "0x001AAD08",
+     "size": 12,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libgraph",
+   "object": "graph_resetpath",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libgraph/graph_resetpath.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001971F8",
+    "code_end": "0x00197260",
+    "end": "0x00197260",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "sceGsResetPath",
+     "addr": "0x001971F8",
+     "size": 104,
+     "matched": true,
+     "c_name": "sceGsResetPath"
+    }
+   ]
+  },
+  {
+   "lib": "libgraph",
+   "object": "graph_setdefdispenv",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libgraph/graph_setdefdispenv.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x00197260",
+    "code_end": "0x001974D0",
+    "end": "0x001974D0",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "sceGsSetDefDispEnv",
+     "addr": "0x00197260",
+     "size": 624,
+     "matched": true,
+     "c_name": "sceGsSetDefDispEnv"
+    }
+   ]
+  },
+  {
+   "lib": "libgraph",
+   "object": "graph_putdispenv",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libgraph/graph_putdispenv.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001974D0",
+    "code_end": "0x0019758C",
+    "end": "0x00197590",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sceGsPutDispEnv",
+     "addr": "0x001974D0",
+     "size": 188,
+     "matched": true,
+     "c_name": "sceGsPutDispEnv"
+    }
+   ]
+  },
+  {
+   "lib": "libgraph",
+   "object": "graph_setdefdrawenv",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libgraph/graph_setdefdrawenv.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x00197590",
+    "code_end": "0x00197774",
+    "end": "0x00197778",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sceGsSetDefDrawEnv",
+     "addr": "0x00197590",
+     "size": 484,
+     "matched": true,
+     "c_name": "sceGsSetDefDrawEnv"
+    }
+   ]
+  },
+  {
+   "lib": "libgraph",
+   "object": "graph_syncv",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libgraph/graph_syncv.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x00197778",
+    "code_end": "0x0019780C",
+    "end": "0x00197810",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sceGsSyncV",
+     "addr": "0x00197778",
+     "size": 148,
+     "matched": true,
+     "c_name": "sceGsSyncV"
+    }
+   ]
+  },
+  {
+   "lib": "libgraph",
+   "object": "graph_syncpath",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libgraph/graph_syncpath.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x00197810",
+    "code_end": "0x00197B24",
+    "end": "0x00197B28",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sceGsSyncPath",
+     "addr": "0x00197810",
+     "size": 788,
+     "matched": true,
+     "c_name": "sceGsSyncPath"
+    }
+   ]
+  },
+  {
+   "lib": "libgraph",
+   "object": "graph_zbufaddr",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libgraph/graph_zbufaddr.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x00197B28",
+    "code_end": "0x00197BF0",
+    "end": "0x00197BF0",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "sceGszbufaddr",
+     "addr": "0x00197B28",
+     "size": 200,
+     "matched": true,
+     "c_name": "sceGszbufaddr"
+    }
+   ]
+  },
+  {
+   "lib": "libdma",
+   "object": "libdma",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libdma/libdma.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 17,
+   "total": 17,
+   "layout": {
+    "start": "0x00197BF0",
+    "code_end": "0x001986BC",
+    "end": "0x001986C0",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "memclr",
+     "addr": "0x00197BF0",
+     "size": 52,
+     "matched": true,
+     "c_name": "memclr"
+    },
+    {
+     "name": "sceDmaGetChan",
+     "addr": "0x00197C28",
+     "size": 40,
+     "matched": true,
+     "c_name": "sceDmaGetChan"
+    },
+    {
+     "name": "sceDmaReset",
+     "addr": "0x00197C50",
+     "size": 220,
+     "matched": true,
+     "c_name": "sceDmaReset"
+    },
+    {
+     "name": "sceDmaDebug",
+     "addr": "0x00197D30",
+     "size": 16,
+     "matched": true,
+     "c_name": "sceDmaDebug"
+    },
+    {
+     "name": "sceDmaPutEnv",
+     "addr": "0x00197D40",
+     "size": 472,
+     "matched": true,
+     "c_name": "sceDmaPutEnv"
+    },
+    {
+     "name": "sceDmaGetEnv",
+     "addr": "0x00197F18",
+     "size": 56,
+     "matched": true,
+     "c_name": "sceDmaGetEnv"
+    },
+    {
+     "name": "sceDmaPutStallAddr",
+     "addr": "0x00197F50",
+     "size": 40,
+     "matched": true,
+     "c_name": "sceDmaPutStallAddr"
+    },
+    {
+     "name": "sceDmaSend",
+     "addr": "0x00197F78",
+     "size": 216,
+     "matched": true,
+     "c_name": "sceDmaSend"
+    },
+    {
+     "name": "sceDmaSendN",
+     "addr": "0x00198050",
+     "size": 228,
+     "matched": true,
+     "c_name": "sceDmaSendN"
+    },
+    {
+     "name": "sceDmaSendI",
+     "addr": "0x00198138",
+     "size": 228,
+     "matched": true,
+     "c_name": "sceDmaSendI"
+    },
+    {
+     "name": "sceDmaRecv",
+     "addr": "0x00198220",
+     "size": 196,
+     "matched": true,
+     "c_name": "sceDmaRecv"
+    },
+    {
+     "name": "sceDmaRecvN",
+     "addr": "0x001982E8",
+     "size": 236,
+     "matched": true,
+     "c_name": "sceDmaRecvN"
+    },
+    {
+     "name": "sceDmaRecvI",
+     "addr": "0x001983D8",
+     "size": 240,
+     "matched": true,
+     "c_name": "sceDmaRecvI"
+    },
+    {
+     "name": "sceDmaSync",
+     "addr": "0x001984C8",
+     "size": 196,
+     "matched": true,
+     "c_name": "sceDmaSync"
+    },
+    {
+     "name": "sceDmaWatch",
+     "addr": "0x00198590",
+     "size": 208,
+     "matched": true,
+     "c_name": "sceDmaWatch"
+    },
+    {
+     "name": "sceDmaPause",
+     "addr": "0x00198660",
+     "size": 72,
+     "matched": true,
+     "c_name": "sceDmaPause"
+    },
+    {
+     "name": "sceDmaRestart",
+     "addr": "0x001986A8",
+     "size": 20,
+     "matched": true,
+     "c_name": "sceDmaRestart"
+    }
+   ]
+  },
+  {
+   "lib": "libdev",
+   "object": "devvu0",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libdev/devvu0.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 13,
+   "total": 13,
+   "layout": {
+    "start": "0x001986C0",
+    "code_end": "0x00198ACC",
+    "end": "0x00198AD0",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sceDevVu0CheckBusy",
+     "addr": "0x001986C0",
+     "size": 20,
+     "matched": true,
+     "c_name": "sceDevVu0CheckBusy"
+    },
+    {
+     "name": "sceDevVu0Reset",
+     "addr": "0x001986D8",
+     "size": 20,
+     "matched": true,
+     "c_name": "sceDevVu0Reset"
+    },
+    {
+     "name": "sceDevVu0Pause",
+     "addr": "0x001986F0",
+     "size": 96,
+     "matched": true,
+     "c_name": "sceDevVu0Pause"
+    },
+    {
+     "name": "sceDevVu0Continue;sceDevVu1Continue",
+     "addr": "0x00198750",
+     "size": 80,
+     "matched": true,
+     "c_name": "sceDevVu0Continue"
+    },
+    {
+     "name": "sceDevVu0PutDBit",
+     "addr": "0x001987A0",
+     "size": 48,
+     "matched": true,
+     "c_name": "sceDevVu0PutDBit"
+    },
+    {
+     "name": "sceDevVu0PutTBit",
+     "addr": "0x001987D0",
+     "size": 48,
+     "matched": true,
+     "c_name": "sceDevVu0PutTBit"
+    },
+    {
+     "name": "sceDevVu0GetDBit",
+     "addr": "0x00198800",
+     "size": 16,
+     "matched": true,
+     "c_name": "sceDevVu0GetDBit"
+    },
+    {
+     "name": "sceDevVu0GetTBit",
+     "addr": "0x00198810",
+     "size": 16,
+     "matched": true,
+     "c_name": "sceDevVu0GetTBit"
+    },
+    {
+     "name": "sceDevVu0Sync",
+     "addr": "0x00198820",
+     "size": 64,
+     "matched": true,
+     "c_name": "sceDevVu0Sync"
+    },
+    {
+     "name": "sceDevVu0Exec",
+     "addr": "0x00198860",
+     "size": 16,
+     "matched": true,
+     "c_name": "sceDevVu0Exec"
+    },
+    {
+     "name": "sceDevVu0GetTpc",
+     "addr": "0x00198870",
+     "size": 12,
+     "matched": true,
+     "c_name": "sceDevVu0GetTpc"
+    },
+    {
+     "name": "sceDevVu0GetCnd",
+     "addr": "0x00198880",
+     "size": 224,
+     "matched": true,
+     "c_name": "sceDevVu0GetCnd"
+    },
+    {
+     "name": "sceDevVu0PutCnd",
+     "addr": "0x00198960",
+     "size": 364,
+     "matched": true,
+     "c_name": "sceDevVu0PutCnd"
+    }
+   ]
+  },
+  {
+   "lib": "libdev",
+   "object": "devgif",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libdev/devgif.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 10,
+   "total": 10,
+   "layout": {
+    "start": "0x00198AD0",
+    "code_end": "0x00198D84",
+    "end": "0x00198D88",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sceDevGifReset",
+     "addr": "0x00198AD0",
+     "size": 20,
+     "matched": true,
+     "c_name": "sceDevGifReset"
+    },
+    {
+     "name": "sceDevGifPause",
+     "addr": "0x00198AE8",
+     "size": 24,
+     "matched": true,
+     "c_name": "sceDevGifPause"
+    },
+    {
+     "name": "sceDevGifContinue",
+     "addr": "0x00198B00",
+     "size": 56,
+     "matched": true,
+     "c_name": "sceDevGifContinue"
+    },
+    {
+     "name": "sceDevGifPutImtMode",
+     "addr": "0x00198B38",
+     "size": 100,
+     "matched": true,
+     "c_name": "sceDevGifPutImtMode"
+    },
+    {
+     "name": "sceDevGifGetImtMode",
+     "addr": "0x00198BA0",
+     "size": 24,
+     "matched": true,
+     "c_name": "sceDevGifGetImtMode"
+    },
+    {
+     "name": "sceDevGifPutP3msk",
+     "addr": "0x00198BB8",
+     "size": 104,
+     "matched": true,
+     "c_name": "sceDevGifPutP3msk"
+    },
+    {
+     "name": "sceDevGifGetP3msk",
+     "addr": "0x00198C20",
+     "size": 32,
+     "matched": true,
+     "c_name": "sceDevGifGetP3msk"
+    },
+    {
+     "name": "sceDevGifSync",
+     "addr": "0x00198C40",
+     "size": 44,
+     "matched": true,
+     "c_name": "sceDevGifSync"
+    },
+    {
+     "name": "sceDevGifGetCnd",
+     "addr": "0x00198C70",
+     "size": 184,
+     "matched": true,
+     "c_name": "sceDevGifGetCnd"
+    },
+    {
+     "name": "sceDevGifPutFifo",
+     "addr": "0x00198D28",
+     "size": 92,
+     "matched": true,
+     "c_name": "sceDevGifPutFifo"
+    }
+   ]
+  },
+  {
+   "lib": "libdev",
+   "object": "devvif0",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libdev/devvif0.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 8,
+   "total": 8,
+   "layout": {
+    "start": "0x00198D88",
+    "code_end": "0x001990B4",
+    "end": "0x001990B8",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sceDevVif0Reset",
+     "addr": "0x00198D88",
+     "size": 36,
+     "matched": true,
+     "c_name": "sceDevVif0Reset"
+    },
+    {
+     "name": "sceDevVif0Pause",
+     "addr": "0x00198DB0",
+     "size": 104,
+     "matched": true,
+     "c_name": "sceDevVif0Pause"
+    },
+    {
+     "name": "sceDevVif0Continue",
+     "addr": "0x00198E18",
+     "size": 60,
+     "matched": true,
+     "c_name": "sceDevVif0Continue"
+    },
+    {
+     "name": "sceDevVif0PutErr",
+     "addr": "0x00198E58",
+     "size": 32,
+     "matched": true,
+     "c_name": "sceDevVif0PutErr"
+    },
+    {
+     "name": "sceDevVif0GetErr",
+     "addr": "0x00198E78",
+     "size": 16,
+     "matched": true,
+     "c_name": "sceDevVif0GetErr"
+    },
+    {
+     "name": "sceDevVif0Sync",
+     "addr": "0x00198E88",
+     "size": 80,
+     "matched": true,
+     "c_name": "sceDevVif0Sync"
+    },
+    {
+     "name": "sceDevVif0GetCnd",
+     "addr": "0x00198ED8",
+     "size": 384,
+     "matched": true,
+     "c_name": "sceDevVif0GetCnd"
+    },
+    {
+     "name": "sceDevVif0PutFifo",
+     "addr": "0x00199058",
+     "size": 92,
+     "matched": true,
+     "c_name": "sceDevVif0PutFifo"
+    }
+   ]
+  },
+  {
+   "lib": "libpad",
+   "object": "libpad",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libpad/libpad.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 30,
+   "total": 30,
+   "layout": {
+    "start": "0x001990B8",
+    "code_end": "0x0019A460",
+    "end": "0x0019A460",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "_send_to_iop",
+     "addr": "0x001990B8",
+     "size": 304,
+     "matched": true,
+     "c_name": "_send_to_iop"
+    },
+    {
+     "name": "scePadInit",
+     "addr": "0x001991E8",
+     "size": 320,
+     "matched": true,
+     "c_name": "scePadInit"
+    },
+    {
+     "name": "scePadInit2",
+     "addr": "0x00199328",
+     "size": 156,
+     "matched": true,
+     "c_name": "scePadInit2"
+    },
+    {
+     "name": "scePadEnd",
+     "addr": "0x001993C8",
+     "size": 128,
+     "matched": true,
+     "c_name": "scePadEnd"
+    },
+    {
+     "name": "scePadPortOpen",
+     "addr": "0x00199448",
+     "size": 484,
+     "matched": true,
+     "c_name": "scePadPortOpen"
+    },
+    {
+     "name": "scePadPortClose",
+     "addr": "0x00199630",
+     "size": 184,
+     "matched": true,
+     "c_name": "scePadPortClose"
+    },
+    {
+     "name": "scePadGetDmaStr",
+     "addr": "0x001996E8",
+     "size": 96,
+     "matched": true,
+     "c_name": "scePadGetDmaStr"
+    },
+    {
+     "name": "scePadGetFrameCount",
+     "addr": "0x00199748",
+     "size": 80,
+     "matched": true,
+     "c_name": "scePadGetFrameCount"
+    },
+    {
+     "name": "scePadRead",
+     "addr": "0x00199798",
+     "size": 124,
+     "matched": true,
+     "c_name": "scePadRead"
+    },
+    {
+     "name": "scePadGetState",
+     "addr": "0x00199818",
+     "size": 120,
+     "matched": true,
+     "c_name": "scePadGetState"
+    },
+    {
+     "name": "scePadStateIntToStr",
+     "addr": "0x00199890",
+     "size": 52,
+     "matched": true,
+     "c_name": "scePadStateIntToStr"
+    },
+    {
+     "name": "scePadSetReqState",
+     "addr": "0x001998C8",
+     "size": 100,
+     "matched": true,
+     "c_name": "scePadSetReqState"
+    },
+    {
+     "name": "scePadGetReqState",
+     "addr": "0x00199930",
+     "size": 80,
+     "matched": true,
+     "c_name": "scePadGetReqState"
+    },
+    {
+     "name": "scePadReqIntToStr",
+     "addr": "0x00199980",
+     "size": 52,
+     "matched": true,
+     "c_name": "scePadReqIntToStr"
+    },
+    {
+     "name": "scePadInfoAct",
+     "addr": "0x001999B8",
+     "size": 288,
+     "matched": true,
+     "c_name": "scePadInfoAct"
+    },
+    {
+     "name": "scePadInfoComb",
+     "addr": "0x00199AD8",
+     "size": 284,
+     "matched": true,
+     "c_name": "scePadInfoComb"
+    },
+    {
+     "name": "scePadInfoMode",
+     "addr": "0x00199BF8",
+     "size": 312,
+     "matched": true,
+     "c_name": "scePadInfoMode"
+    },
+    {
+     "name": "scePadSetMainMode",
+     "addr": "0x00199D30",
+     "size": 180,
+     "matched": true,
+     "c_name": "scePadSetMainMode"
+    },
+    {
+     "name": "scePadSetActDirect",
+     "addr": "0x00199DE8",
+     "size": 184,
+     "matched": true,
+     "c_name": "scePadSetActDirect"
+    },
+    {
+     "name": "scePadSetActAlign",
+     "addr": "0x00199EA0",
+     "size": 216,
+     "matched": true,
+     "c_name": "scePadSetActAlign"
+    },
+    {
+     "name": "scePadGetButtonMask",
+     "addr": "0x00199F78",
+     "size": 180,
+     "matched": true,
+     "c_name": "scePadGetButtonMask"
+    },
+    {
+     "name": "scePadSetButtonInfo",
+     "addr": "0x0019A030",
+     "size": 176,
+     "matched": true,
+     "c_name": "scePadSetButtonInfo"
+    },
+    {
+     "name": "scePadInfoPressMode",
+     "addr": "0x0019A0E0",
+     "size": 92,
+     "matched": true,
+     "c_name": "scePadInfoPressMode"
+    },
+    {
+     "name": "scePadEnterPressMode",
+     "addr": "0x0019A140",
+     "size": 84,
+     "matched": true,
+     "c_name": "scePadEnterPressMode"
+    },
+    {
+     "name": "scePadExitPressMode",
+     "addr": "0x0019A198",
+     "size": 84,
+     "matched": true,
+     "c_name": "scePadExitPressMode"
+    },
+    {
+     "name": "scePadSetVrefParam",
+     "addr": "0x0019A1F0",
+     "size": 204,
+     "matched": true,
+     "c_name": "scePadSetVrefParam"
+    },
+    {
+     "name": "scePadGetPortMax",
+     "addr": "0x0019A2C0",
+     "size": 100,
+     "matched": true,
+     "c_name": "scePadGetPortMax"
+    },
+    {
+     "name": "scePadGetSlotMax",
+     "addr": "0x0019A328",
+     "size": 104,
+     "matched": true,
+     "c_name": "scePadGetSlotMax"
+    },
+    {
+     "name": "scePadGetModVersion",
+     "addr": "0x0019A390",
+     "size": 100,
+     "matched": true,
+     "c_name": "scePadGetModVersion"
+    },
+    {
+     "name": "scePadSetWarningLevel",
+     "addr": "0x0019A3F8",
+     "size": 104,
+     "matched": true,
+     "c_name": "scePadSetWarningLevel"
+    }
+   ]
+  },
+  {
+   "lib": "libcdvd",
+   "object": "eecdvd",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libcdvd/eecdvd.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": false,
+   "matched": 21,
+   "total": 22,
+   "layout": {
+    "start": "0x0019A460",
+    "code_end": "0x0019C454",
+    "end": "0x0019C458",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "CB_DelayTh",
+     "addr": "0x0019A460",
+     "size": 36,
+     "matched": true,
+     "c_name": "CB_DelayTh"
+    },
+    {
+     "name": "sceCdDelayThread",
+     "addr": "0x0019A488",
+     "size": 104,
+     "matched": true,
+     "c_name": "sceCdDelayThread"
+    },
+    {
+     "name": "sceCdCallback",
+     "addr": "0x0019A4F0",
+     "size": 84,
+     "matched": true,
+     "c_name": "sceCdCallback"
+    },
+    {
+     "name": "_sceCd_cd_callback;cd_callback",
+     "addr": "0x0019A548",
+     "size": 160,
+     "matched": true,
+     "c_name": "_sceCd_cd_callback"
+    },
+    {
+     "name": "_Cdvd_cbLoop",
+     "addr": "0x0019A5E8",
+     "size": 188,
+     "matched": true,
+     "c_name": "_Cdvd_cbLoop"
+    },
+    {
+     "name": "sceCdInitEeCB",
+     "addr": "0x0019A6A8",
+     "size": 212,
+     "matched": true,
+     "c_name": "sceCdInitEeCB"
+    },
+    {
+     "name": "_sceCd_cd_read_intr;cd_read_intr",
+     "addr": "0x0019A780",
+     "size": 160,
+     "matched": true,
+     "c_name": "_sceCd_cd_read_intr"
+    },
+    {
+     "name": "cmd_sem_init",
+     "addr": "0x0019A820",
+     "size": 148,
+     "matched": true,
+     "c_name": "cmd_sem_init"
+    },
+    {
+     "name": "cdvd_exit",
+     "addr": "0x0019A8B8",
+     "size": 128,
+     "matched": true,
+     "c_name": "cdvd_exit"
+    },
+    {
+     "name": "sceCdPOffCallback",
+     "addr": "0x0019A938",
+     "size": 108,
+     "matched": true,
+     "c_name": "sceCdPOffCallback"
+    },
+    {
+     "name": "_sceCd_Poff_Intr",
+     "addr": "0x0019A9A8",
+     "size": 60,
+     "matched": true,
+     "c_name": "_sceCd_Poff_Intr"
+    },
+    {
+     "name": "PowerOffCB",
+     "addr": "0x0019A9E8",
+     "size": 100,
+     "matched": true,
+     "c_name": "PowerOffCB"
+    },
+    {
+     "name": "sceCdSearchFile",
+     "addr": "0x0019AA50",
+     "size": 764,
+     "matched": true,
+     "c_name": "sceCdSearchFile"
+    },
+    {
+     "name": "_sceCd_ncmd_prechk;ncmd_prechk",
+     "addr": "0x0019AD50",
+     "size": 368,
+     "matched": true,
+     "c_name": "_sceCd_ncmd_prechk"
+    },
+    {
+     "name": "sceCdNcmdDiskReady",
+     "addr": "0x0019AEC0",
+     "size": 152,
+     "matched": true,
+     "c_name": "sceCdNcmdDiskReady"
+    },
+    {
+     "name": "sceCdSync",
+     "addr": "0x0019AF58",
+     "size": 160,
+     "matched": true,
+     "c_name": "sceCdSync"
+    },
+    {
+     "name": "sceCdSyncS",
+     "addr": "0x0019AFF8",
+     "size": 108,
+     "matched": true,
+     "c_name": "sceCdSyncS"
+    },
+    {
+     "name": "_sceCd_scmd_prechk;scmd_prechk",
+     "addr": "0x0019B068",
+     "size": 368,
+     "matched": true,
+     "c_name": "_sceCd_scmd_prechk"
+    },
+    {
+     "name": "sceCdInit",
+     "addr": "0x0019B1D8",
+     "size": 736,
+     "matched": true,
+     "c_name": "sceCdInit"
+    },
+    {
+     "name": "sceCdDiskReady;sceCdDiskReady_old",
+     "addr": "0x0019B4B8",
+     "size": 504,
+     "matched": true,
+     "c_name": "sceCdDiskReady"
+    },
+    {
+     "name": "sceCdMmode",
+     "addr": "0x0019B6B0",
+     "size": 196,
+     "matched": true,
+     "c_name": "sceCdMmode"
+    },
+    {
+     "name": "CB_DelayTh",
+     "addr": "0x0019C430",
+     "size": 36,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libcdvd",
+   "object": "eecdvd_read",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libcdvd/eecdvd_read.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019B778",
+    "code_end": "0x0019B958",
+    "end": "0x0019B958",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "sceCdRead",
+     "addr": "0x0019B778",
+     "size": 480,
+     "matched": true,
+     "c_name": "sceCdRead"
+    }
+   ]
+  },
+  {
+   "lib": "libcdvd",
+   "object": "eecdvd_stop",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libcdvd/eecdvd_stop.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019B958",
+    "code_end": "0x0019BA08",
+    "end": "0x0019BA08",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "sceCdStop",
+     "addr": "0x0019B958",
+     "size": 176,
+     "matched": true,
+     "c_name": "sceCdStop"
+    }
+   ]
+  },
+  {
+   "lib": "libcdvd",
+   "object": "eecdvd_geterror",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libcdvd/eecdvd_geterror.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019BA08",
+    "code_end": "0x0019BAA0",
+    "end": "0x0019BAA0",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "sceCdGetError",
+     "addr": "0x0019BA08",
+     "size": 152,
+     "matched": true,
+     "c_name": "sceCdGetError"
+    }
+   ]
+  },
+  {
+   "lib": "libmc",
+   "object": "libmc",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libmc/libmc.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 25,
+   "total": 25,
+   "layout": {
+    "start": "0x0019BAA0",
+    "code_end": "0x0019D258",
+    "end": "0x0019D258",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "sceMcInit",
+     "addr": "0x0019BAA0",
+     "size": 436,
+     "matched": true,
+     "c_name": "sceMcInit"
+    },
+    {
+     "name": "fn_0019BC58",
+     "addr": "0x0019BC58",
+     "size": 48,
+     "matched": true,
+     "c_name": "_lmcGetClientPtr"
+    },
+    {
+     "name": "sceMcChangeThreadPriority",
+     "addr": "0x0019BC88",
+     "size": 180,
+     "matched": true,
+     "c_name": "sceMcChangeThreadPriority"
+    },
+    {
+     "name": "sceMcGetSlotMax",
+     "addr": "0x0019BD40",
+     "size": 192,
+     "matched": true,
+     "c_name": "sceMcGetSlotMax"
+    },
+    {
+     "name": "sceMcOpen",
+     "addr": "0x0019BE00",
+     "size": 308,
+     "matched": true,
+     "c_name": "sceMcOpen"
+    },
+    {
+     "name": "sceMcMkdir",
+     "addr": "0x0019BF38",
+     "size": 52,
+     "matched": true,
+     "c_name": "sceMcMkdir"
+    },
+    {
+     "name": "sceMcClose",
+     "addr": "0x0019BF70",
+     "size": 180,
+     "matched": true,
+     "c_name": "sceMcClose"
+    },
+    {
+     "name": "sceMcSeek",
+     "addr": "0x0019C028",
+     "size": 212,
+     "matched": true,
+     "c_name": "sceMcSeek"
+    },
+    {
+     "name": "mceIntrReadFixAlign",
+     "addr": "0x0019C100",
+     "size": 144,
+     "matched": true,
+     "c_name": "mceIntrReadFixAlign"
+    },
+    {
+     "name": "sceMcRead",
+     "addr": "0x0019C190",
+     "size": 284,
+     "matched": true,
+     "c_name": "sceMcRead"
+    },
+    {
+     "name": "sceMcWrite",
+     "addr": "0x0019C2B0",
+     "size": 380,
+     "matched": true,
+     "c_name": "sceMcWrite"
+    },
+    {
+     "name": "mcDelayThread",
+     "addr": "0x0019C458",
+     "size": 68,
+     "matched": true,
+     "c_name": "mcDelayThread"
+    },
+    {
+     "name": "sceMcSync",
+     "addr": "0x0019C4A0",
+     "size": 224,
+     "matched": true,
+     "c_name": "sceMcSync"
+    },
+    {
+     "name": "mceGetInfoApdx",
+     "addr": "0x0019C580",
+     "size": 84,
+     "matched": true,
+     "c_name": "mceGetInfoApdx"
+    },
+    {
+     "name": "sceMcGetInfo",
+     "addr": "0x0019C5D8",
+     "size": 388,
+     "matched": true,
+     "c_name": "sceMcGetInfo"
+    },
+    {
+     "name": "sceMcGetDir",
+     "addr": "0x0019C760",
+     "size": 344,
+     "matched": true,
+     "c_name": "sceMcGetDir"
+    },
+    {
+     "name": "mceStorePwd",
+     "addr": "0x0019C8B8",
+     "size": 132,
+     "matched": true,
+     "c_name": "mceStorePwd"
+    },
+    {
+     "name": "sceMcChdir",
+     "addr": "0x0019C940",
+     "size": 336,
+     "matched": true,
+     "c_name": "sceMcChdir"
+    },
+    {
+     "name": "sceMcFormat",
+     "addr": "0x0019CA90",
+     "size": 200,
+     "matched": true,
+     "c_name": "sceMcFormat"
+    },
+    {
+     "name": "sceMcDelete",
+     "addr": "0x0019CB58",
+     "size": 296,
+     "matched": true,
+     "c_name": "sceMcDelete"
+    },
+    {
+     "name": "sceMcFlush",
+     "addr": "0x0019CC80",
+     "size": 180,
+     "matched": true,
+     "c_name": "sceMcFlush"
+    },
+    {
+     "name": "sceMcSetFileInfo",
+     "addr": "0x0019CD38",
+     "size": 472,
+     "matched": true,
+     "c_name": "sceMcSetFileInfo"
+    },
+    {
+     "name": "sceMcRename",
+     "addr": "0x0019CF10",
+     "size": 360,
+     "matched": true,
+     "c_name": "sceMcRename"
+    },
+    {
+     "name": "sceMcUnformat",
+     "addr": "0x0019D078",
+     "size": 200,
+     "matched": true,
+     "c_name": "sceMcUnformat"
+    },
+    {
+     "name": "sceMcGetEntSpace",
+     "addr": "0x0019D140",
+     "size": 280,
+     "matched": true,
+     "c_name": "sceMcGetEntSpace"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "s_sin",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/s_sin.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019D258",
+    "code_end": "0x0019D34C",
+    "end": "0x0019D350",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sin",
+     "addr": "0x0019D258",
+     "size": 244,
+     "matched": true,
+     "c_name": "sin"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "w_atan2",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/w_atan2.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019D350",
+    "code_end": "0x0019D468",
+    "end": "0x0019D468",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "atan2",
+     "addr": "0x0019D350",
+     "size": 280,
+     "matched": true,
+     "c_name": "atan2"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "w_sqrt",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/w_sqrt.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019D468",
+    "code_end": "0x0019D574",
+    "end": "0x0019D578",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sqrt",
+     "addr": "0x0019D468",
+     "size": 268,
+     "matched": true,
+     "c_name": "sqrt"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "e_atan2",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/e_atan2.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019D578",
+    "code_end": "0x0019D8AC",
+    "end": "0x0019D8B0",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "__ieee754_atan2",
+     "addr": "0x0019D578",
+     "size": 820,
+     "matched": true,
+     "c_name": "__ieee754_atan2"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "e_rem_pio2",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/e_rem_pio2.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019D8B0",
+    "code_end": "0x0019DDCC",
+    "end": "0x0019DDD0",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "__ieee754_rem_pio2",
+     "addr": "0x0019D8B0",
+     "size": 1308,
+     "matched": true,
+     "c_name": "__ieee754_rem_pio2"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "e_sqrt",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/e_sqrt.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019DDD0",
+    "code_end": "0x0019E0D4",
+    "end": "0x0019E0D8",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "__ieee754_sqrt",
+     "addr": "0x0019DDD0",
+     "size": 772,
+     "matched": true,
+     "c_name": "__ieee754_sqrt"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "k_cos",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/k_cos.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019E0D8",
+    "code_end": "0x0019E324",
+    "end": "0x0019E328",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "__kernel_cos",
+     "addr": "0x0019E0D8",
+     "size": 588,
+     "matched": true,
+     "c_name": "__kernel_cos"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "k_rem_pio2",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/k_rem_pio2.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019E328",
+    "code_end": "0x0019EE90",
+    "end": "0x0019EE90",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__kernel_rem_pio2",
+     "addr": "0x0019E328",
+     "size": 2920,
+     "matched": true,
+     "c_name": "__kernel_rem_pio2"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "k_sin",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/k_sin.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019EE90",
+    "code_end": "0x0019F064",
+    "end": "0x0019F068",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "__kernel_sin",
+     "addr": "0x0019EE90",
+     "size": 468,
+     "matched": true,
+     "c_name": "__kernel_sin"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "s_atan",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/s_atan.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019F068",
+    "code_end": "0x0019F474",
+    "end": "0x0019F478",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "atan",
+     "addr": "0x0019F068",
+     "size": 1036,
+     "matched": true,
+     "c_name": "atan"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "s_fabs",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/s_fabs.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019F478",
+    "code_end": "0x0019F4AC",
+    "end": "0x0019F4B0",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "fabs",
+     "addr": "0x0019F478",
+     "size": 52,
+     "matched": true,
+     "c_name": "fabs"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "s_floor",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/s_floor.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019F4B0",
+    "code_end": "0x0019F688",
+    "end": "0x0019F688",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "floor",
+     "addr": "0x0019F4B0",
+     "size": 472,
+     "matched": true,
+     "c_name": "floor"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "s_isnan",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/s_isnan.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019F688",
+    "code_end": "0x0019F6C0",
+    "end": "0x0019F6C0",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "isnan",
+     "addr": "0x0019F688",
+     "size": 56,
+     "matched": true,
+     "c_name": "isnan"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "s_matherr",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/s_matherr.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019F6C0",
+    "code_end": "0x0019F6E4",
+    "end": "0x0019F6E8",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "matherr",
+     "addr": "0x0019F6C0",
+     "size": 36,
+     "matched": true,
+     "c_name": "matherr"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "s_scalbn",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/s_scalbn.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019F6E8",
+    "code_end": "0x0019F89C",
+    "end": "0x0019F8A0",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "scalbn",
+     "addr": "0x0019F6E8",
+     "size": 436,
+     "matched": true,
+     "c_name": "scalbn"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "s_copysign",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/s_copysign.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019F8A0",
+    "code_end": "0x0019F8E4",
+    "end": "0x0019F8E8",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "copysign",
+     "addr": "0x0019F8A0",
+     "size": 68,
+     "matched": true,
+     "c_name": "copysign"
+    }
+   ]
+  },
+  {
+   "lib": "libgcc",
+   "object": "_divdi3",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libgcc/_divdi3.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libgcc"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x0019FA10",
+    "code_end": "0x001A00FC",
+    "end": "0x001A0100",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "__divdi3",
+     "addr": "0x0019FA10",
+     "size": 1772,
+     "matched": true,
+     "c_name": "__divdi3"
+    }
+   ]
+  },
+  {
+   "lib": "libgcc",
+   "object": "_floatdisf",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libgcc/_floatdisf.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libgcc"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A0100",
+    "code_end": "0x001A01E0",
+    "end": "0x001A01E0",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__floatdisf",
+     "addr": "0x001A0100",
+     "size": 224,
+     "matched": true,
+     "c_name": "__floatdisf"
+    }
+   ]
+  },
+  {
+   "lib": "libgcc",
+   "object": "_moddi3",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libgcc/_moddi3.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libgcc"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A01E0",
+    "code_end": "0x001A0848",
+    "end": "0x001A0848",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__moddi3",
+     "addr": "0x001A01E0",
+     "size": 1640,
+     "matched": true,
+     "c_name": "__moddi3"
+    }
+   ]
+  },
+  {
+   "lib": "libgcc",
+   "object": "dp_bit",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libgcc/dp_bit.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libgcc"
+    ]
+   },
+   "complete": true,
+   "matched": 15,
+   "total": 15,
+   "layout": {
+    "start": "0x001A0848",
+    "code_end": "0x001A153C",
+    "end": "0x001A1540",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "__pack_d",
+     "addr": "0x001A0848",
+     "size": 300,
+     "matched": true,
+     "c_name": "__pack_d"
+    },
+    {
+     "name": "__unpack_d",
+     "addr": "0x001A0978",
+     "size": 156,
+     "matched": true,
+     "c_name": "__unpack_d"
+    },
+    {
+     "name": "_fpadd_parts",
+     "addr": "0x001A0A18",
+     "size": 576,
+     "matched": true,
+     "c_name": "_fpadd_parts"
+    },
+    {
+     "name": "dpadd",
+     "addr": "0x001A0C58",
+     "size": 88,
+     "matched": true,
+     "c_name": "dpadd"
+    },
+    {
+     "name": "dpsub",
+     "addr": "0x001A0CB0",
+     "size": 100,
+     "matched": true,
+     "c_name": "dpsub"
+    },
+    {
+     "name": "dpmul",
+     "addr": "0x001A0D18",
+     "size": 680,
+     "matched": true,
+     "c_name": "dpmul"
+    },
+    {
+     "name": "dpdiv",
+     "addr": "0x001A0FC0",
+     "size": 360,
+     "matched": true,
+     "c_name": "dpdiv"
+    },
+    {
+     "name": "__fpcmp_parts_d",
+     "addr": "0x001A1128",
+     "size": 276,
+     "matched": true,
+     "c_name": "__fpcmp_parts_d"
+    },
+    {
+     "name": "dpcmp",
+     "addr": "0x001A1240",
+     "size": 76,
+     "matched": true,
+     "c_name": "dpcmp"
+    },
+    {
+     "name": "litodp",
+     "addr": "0x001A1290",
+     "size": 184,
+     "matched": true,
+     "c_name": "litodp"
+    },
+    {
+     "name": "dptoli",
+     "addr": "0x001A1348",
+     "size": 148,
+     "matched": true,
+     "c_name": "dptoli"
+    },
+    {
+     "name": "dptoul",
+     "addr": "0x001A13E0",
+     "size": 160,
+     "matched": true,
+     "c_name": "dptoul"
+    },
+    {
+     "name": "__negdf2",
+     "addr": "0x001A1480",
+     "size": 56,
+     "matched": true,
+     "c_name": "__negdf2"
+    },
+    {
+     "name": "__make_dp",
+     "addr": "0x001A14B8",
+     "size": 44,
+     "matched": true,
+     "c_name": "__make_dp"
+    },
+    {
+     "name": "dptofp",
+     "addr": "0x001A14E8",
+     "size": 84,
+     "matched": true,
+     "c_name": "dptofp"
+    }
+   ]
+  },
+  {
+   "lib": "libgcc",
+   "object": "fp_bit",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libgcc/fp_bit.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libgcc"
+    ]
+   },
+   "complete": true,
+   "matched": 15,
+   "total": 15,
+   "layout": {
+    "start": "0x001A1540",
+    "code_end": "0x001A2120",
+    "end": "0x001A2120",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__pack_f",
+     "addr": "0x001A1540",
+     "size": 268,
+     "matched": true,
+     "c_name": "__pack_f"
+    },
+    {
+     "name": "__unpack_f",
+     "addr": "0x001A1650",
+     "size": 144,
+     "matched": true,
+     "c_name": "__unpack_f"
+    },
+    {
+     "name": "_fpadd_parts",
+     "addr": "0x001A16E0",
+     "size": 564,
+     "matched": true,
+     "c_name": "fpbit_fpadd_parts"
+    },
+    {
+     "name": "fpadd",
+     "addr": "0x001A1918",
+     "size": 88,
+     "matched": true,
+     "c_name": "fpadd"
+    },
+    {
+     "name": "fpsub",
+     "addr": "0x001A1970",
+     "size": 100,
+     "matched": true,
+     "c_name": "fpsub"
+    },
+    {
+     "name": "fpmul",
+     "addr": "0x001A19D8",
+     "size": 500,
+     "matched": true,
+     "c_name": "fpmul"
+    },
+    {
+     "name": "fpdiv",
+     "addr": "0x001A1BD0",
+     "size": 352,
+     "matched": true,
+     "c_name": "fpdiv"
+    },
+    {
+     "name": "__fpcmp_parts_f",
+     "addr": "0x001A1D30",
+     "size": 276,
+     "matched": true,
+     "c_name": "__fpcmp_parts_f"
+    },
+    {
+     "name": "fpcmp",
+     "addr": "0x001A1E48",
+     "size": 76,
+     "matched": true,
+     "c_name": "fpcmp"
+    },
+    {
+     "name": "sitofp",
+     "addr": "0x001A1E98",
+     "size": 184,
+     "matched": true,
+     "c_name": "sitofp"
+    },
+    {
+     "name": "fptosi",
+     "addr": "0x001A1F50",
+     "size": 140,
+     "matched": true,
+     "c_name": "fptosi"
+    },
+    {
+     "name": "fptoui",
+     "addr": "0x001A1FE0",
+     "size": 152,
+     "matched": true,
+     "c_name": "fptoui"
+    },
+    {
+     "name": "__negsf2",
+     "addr": "0x001A2078",
+     "size": 56,
+     "matched": true,
+     "c_name": "__negsf2"
+    },
+    {
+     "name": "__make_fp",
+     "addr": "0x001A20B0",
+     "size": 44,
+     "matched": true,
+     "c_name": "__make_fp"
+    },
+    {
+     "name": "fptodp",
+     "addr": "0x001A20E0",
+     "size": 64,
+     "matched": true,
+     "c_name": "fptodp"
+    }
+   ]
+  },
+  {
+   "lib": "libgcc",
+   "object": "_muldi3",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libgcc/_muldi3.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libgcc"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A2120",
+    "code_end": "0x001A2180",
+    "end": "0x001A2180",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__muldi3",
+     "addr": "0x001A2120",
+     "size": 96,
+     "matched": true,
+     "c_name": "__muldi3"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "malloc",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/malloc.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 2,
+   "total": 2,
+   "layout": {
+    "start": "0x001A2190",
+    "code_end": "0x001A21C8",
+    "end": "0x001A21C8",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__sigtramp;malloc;puts;raise;system",
+     "addr": "0x001A2190",
+     "size": 40,
+     "matched": true,
+     "c_name": "malloc"
+    },
+    {
+     "name": "free;unsetenv",
+     "addr": "0x001A21B8",
+     "size": 16,
+     "matched": true,
+     "c_name": "free"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "mallocr",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/mallocr.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 2,
+   "total": 2,
+   "layout": {
+    "start": "0x001A21C8",
+    "code_end": "0x001A2B98",
+    "end": "0x001A2B98",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "malloc_extend_top",
+     "addr": "0x001A21C8",
+     "size": 596,
+     "matched": true,
+     "c_name": "malloc_extend_top"
+    },
+    {
+     "name": "_malloc_r",
+     "addr": "0x001A2420",
+     "size": 1912,
+     "matched": true,
+     "c_name": "_malloc_r"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "memcpy",
+   "lib_version": "",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 1,
+   "layout": {
+    "start": "0x001A2B98",
+    "code_end": "0x001A2C48",
+    "end": "0x001A2C48",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "memcpy",
+     "addr": "0x001A2B98",
+     "size": 176,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "memset",
+   "lib_version": "",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 1,
+   "layout": {
+    "start": "0x001A2C48",
+    "code_end": "0x001A2D08",
+    "end": "0x001A2D08",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "memset",
+     "addr": "0x001A2C48",
+     "size": 192,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "filestub",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/filestub.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": false,
+   "matched": 38,
+   "total": 41,
+   "layout": {
+    "start": "0x001A2D08",
+    "code_end": "0x001AFA4C",
+    "end": "0x001AFA50",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "_sceFsIntrSigSema;_sceFsSemExit;_sceFsSemInit;_sceFsSigSema",
+     "addr": "0x001A2D08",
+     "size": 8,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_sceFsIntrSigSema;_sceFsSemExit;_sceFsSemInit;_sceFsSigSema",
+     "addr": "0x001A2D10",
+     "size": 8,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_sceFsIobSemaMK",
+     "addr": "0x001AC348",
+     "size": 92,
+     "matched": true,
+     "c_name": "_sceFsIobSemaMK"
+    },
+    {
+     "name": "new_iob",
+     "addr": "0x001AC3A8",
+     "size": 136,
+     "matched": true,
+     "c_name": "new_iob"
+    },
+    {
+     "name": "get_iob",
+     "addr": "0x001AC430",
+     "size": 108,
+     "matched": true,
+     "c_name": "get_iob"
+    },
+    {
+     "name": "_sceFs_Rcv_Intr",
+     "addr": "0x001AC4A0",
+     "size": 960,
+     "matched": true,
+     "c_name": "_sceFs_Rcv_Intr"
+    },
+    {
+     "name": "_sceFsSemInit",
+     "addr": "0x001AC860",
+     "size": 76,
+     "matched": true,
+     "c_name": "_sceFsSemInit"
+    },
+    {
+     "name": "_sceFsWaitS",
+     "addr": "0x001AC8B0",
+     "size": 44,
+     "matched": true,
+     "c_name": "_sceFsWaitS"
+    },
+    {
+     "name": "fn_001AC8E0",
+     "addr": "0x001AC8E0",
+     "size": 12,
+     "matched": true,
+     "c_name": "_sceFsSigSema"
+    },
+    {
+     "name": "sceFsInit",
+     "addr": "0x001AC8F0",
+     "size": 416,
+     "matched": true,
+     "c_name": "sceFsInit"
+    },
+    {
+     "name": "_fs_version;_lf_version",
+     "addr": "0x001ACA90",
+     "size": 140,
+     "matched": true,
+     "c_name": "_fs_version"
+    },
+    {
+     "name": "sceFsReset",
+     "addr": "0x001ACB20",
+     "size": 52,
+     "matched": true,
+     "c_name": "sceFsReset"
+    },
+    {
+     "name": "sceOpen",
+     "addr": "0x001ACB58",
+     "size": 644,
+     "matched": true,
+     "c_name": "sceOpen"
+    },
+    {
+     "name": "sceClose",
+     "addr": "0x001ACDE0",
+     "size": 380,
+     "matched": true,
+     "c_name": "sceClose"
+    },
+    {
+     "name": "sceLseek",
+     "addr": "0x001ACF60",
+     "size": 568,
+     "matched": true,
+     "c_name": "sceLseek"
+    },
+    {
+     "name": "sceRead",
+     "addr": "0x001AD198",
+     "size": 624,
+     "matched": true,
+     "c_name": "sceRead"
+    },
+    {
+     "name": "sceWrite",
+     "addr": "0x001AD408",
+     "size": 704,
+     "matched": true,
+     "c_name": "sceWrite"
+    },
+    {
+     "name": "sceIoctl",
+     "addr": "0x001AD6C8",
+     "size": 844,
+     "matched": true,
+     "c_name": "sceIoctl"
+    },
+    {
+     "name": "sceIoctl2",
+     "addr": "0x001ADA18",
+     "size": 468,
+     "matched": true,
+     "c_name": "sceIoctl2"
+    },
+    {
+     "name": "_sceCallCode",
+     "addr": "0x001ADBF0",
+     "size": 420,
+     "matched": true,
+     "c_name": "_sceCallCode"
+    },
+    {
+     "name": "sceRemove",
+     "addr": "0x001ADD98",
+     "size": 28,
+     "matched": true,
+     "c_name": "sceRemove"
+    },
+    {
+     "name": "sceMkdir",
+     "addr": "0x001ADDB8",
+     "size": 428,
+     "matched": true,
+     "c_name": "sceMkdir"
+    },
+    {
+     "name": "sceRmdir",
+     "addr": "0x001ADF68",
+     "size": 28,
+     "matched": true,
+     "c_name": "sceRmdir"
+    },
+    {
+     "name": "sceFormat",
+     "addr": "0x001ADF88",
+     "size": 620,
+     "matched": true,
+     "c_name": "sceFormat"
+    },
+    {
+     "name": "sceAddDrv",
+     "addr": "0x001AE1F8",
+     "size": 288,
+     "matched": true,
+     "c_name": "sceAddDrv"
+    },
+    {
+     "name": "sceDelDrv",
+     "addr": "0x001AE318",
+     "size": 28,
+     "matched": true,
+     "c_name": "sceDelDrv"
+    },
+    {
+     "name": "sceDopen",
+     "addr": "0x001AE338",
+     "size": 156,
+     "matched": true,
+     "c_name": "sceDopen"
+    },
+    {
+     "name": "sceDclose",
+     "addr": "0x001AE3D8",
+     "size": 360,
+     "matched": true,
+     "c_name": "sceDclose"
+    },
+    {
+     "name": "sceDread",
+     "addr": "0x001AE540",
+     "size": 344,
+     "matched": true,
+     "c_name": "sceDread"
+    },
+    {
+     "name": "sceGetstat",
+     "addr": "0x001AE698",
+     "size": 416,
+     "matched": true,
+     "c_name": "sceGetstat"
+    },
+    {
+     "name": "sceChstat",
+     "addr": "0x001AE838",
+     "size": 572,
+     "matched": true,
+     "c_name": "sceChstat"
+    },
+    {
+     "name": "sceRename",
+     "addr": "0x001AEA78",
+     "size": 496,
+     "matched": true,
+     "c_name": "sceRename"
+    },
+    {
+     "name": "sceChdir",
+     "addr": "0x001AEC68",
+     "size": 28,
+     "matched": true,
+     "c_name": "sceChdir"
+    },
+    {
+     "name": "sceSync",
+     "addr": "0x001AEC88",
+     "size": 408,
+     "matched": true,
+     "c_name": "sceSync"
+    },
+    {
+     "name": "sceMount",
+     "addr": "0x001AEE20",
+     "size": 620,
+     "matched": true,
+     "c_name": "sceMount"
+    },
+    {
+     "name": "sceUmount",
+     "addr": "0x001AF090",
+     "size": 28,
+     "matched": true,
+     "c_name": "sceUmount"
+    },
+    {
+     "name": "sceLseek64",
+     "addr": "0x001AF0B0",
+     "size": 568,
+     "matched": true,
+     "c_name": "sceLseek64"
+    },
+    {
+     "name": "sceDevctl",
+     "addr": "0x001AF2E8",
+     "size": 560,
+     "matched": true,
+     "c_name": "sceDevctl"
+    },
+    {
+     "name": "sceSymlink",
+     "addr": "0x001AF518",
+     "size": 480,
+     "matched": true,
+     "c_name": "sceSymlink"
+    },
+    {
+     "name": "sceReadlink",
+     "addr": "0x001AF6F8",
+     "size": 456,
+     "matched": true,
+     "c_name": "sceReadlink"
+    },
+    {
+     "name": "_fs_version;_lf_version",
+     "addr": "0x001AF9C0",
+     "size": 140,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "printf",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/printf.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 2,
+   "total": 2,
+   "layout": {
+    "start": "0x001A2D18",
+    "code_end": "0x001A2DA8",
+    "end": "0x001A2DA8",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "_printf_r",
+     "addr": "0x001A2D18",
+     "size": 60,
+     "matched": true,
+     "c_name": "_printf_r"
+    },
+    {
+     "name": "printf",
+     "addr": "0x001A2D58",
+     "size": 80,
+     "matched": true,
+     "c_name": "printf"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "rand",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/rand.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 2,
+   "total": 2,
+   "layout": {
+    "start": "0x001A2DA8",
+    "code_end": "0x001A2DE8",
+    "end": "0x001A2DE8",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "srand",
+     "addr": "0x001A2DA8",
+     "size": 16,
+     "matched": true,
+     "c_name": "srand"
+    },
+    {
+     "name": "rand",
+     "addr": "0x001A2DB8",
+     "size": 48,
+     "matched": true,
+     "c_name": "rand"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "sbrkr",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/sbrkr.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A2DE8",
+    "code_end": "0x001A2E44",
+    "end": "0x001A2E48",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "_sbrk_r",
+     "addr": "0x001A2DE8",
+     "size": 92,
+     "matched": true,
+     "c_name": "_sbrk_r"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "sprintf",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/sprintf.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 2,
+   "total": 2,
+   "layout": {
+    "start": "0x001A2E48",
+    "code_end": "0x001A2F20",
+    "end": "0x001A2F20",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "_sprintf_r",
+     "addr": "0x001A2E48",
+     "size": 104,
+     "matched": true,
+     "c_name": "_sprintf_r"
+    },
+    {
+     "name": "sprintf",
+     "addr": "0x001A2EB0",
+     "size": 112,
+     "matched": true,
+     "c_name": "sprintf"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "strcat",
+   "lib_version": "",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 1,
+   "layout": {
+    "start": "0x001A2F20",
+    "code_end": "0x001A304C",
+    "end": "0x001A304C",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "strcat",
+     "addr": "0x001A2F20",
+     "size": 300,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "strcmp",
+   "lib_version": "",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 1,
+   "layout": {
+    "start": "0x001A304C",
+    "code_end": "0x001A3190",
+    "end": "0x001A3190",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "strcmp",
+     "addr": "0x001A304C",
+     "size": 324,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "strcpy",
+   "lib_version": "",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 1,
+   "layout": {
+    "start": "0x001A3190",
+    "code_end": "0x001A32A4",
+    "end": "0x001A32A4",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "strcpy",
+     "addr": "0x001A3190",
+     "size": 276,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "strlen",
+   "lib_version": "",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 1,
+   "layout": {
+    "start": "0x001A32A4",
+    "code_end": "0x001A33DC",
+    "end": "0x001A33E0",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "strlen",
+     "addr": "0x001A32A4",
+     "size": 312,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "strncpy",
+   "lib_version": "",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 1,
+   "layout": {
+    "start": "0x001A33E0",
+    "code_end": "0x001A359C",
+    "end": "0x001A35A0",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "strncpy",
+     "addr": "0x001A33E0",
+     "size": 444,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "vfprintf",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/vfprintf.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 6,
+   "total": 6,
+   "layout": {
+    "start": "0x001A35A0",
+    "code_end": "0x001A4EC0",
+    "end": "0x001A4EC0",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__sprint",
+     "addr": "0x001A35A0",
+     "size": 68,
+     "matched": true,
+     "c_name": "__sprint"
+    },
+    {
+     "name": "__sbprintf",
+     "addr": "0x001A35E8",
+     "size": 180,
+     "matched": true,
+     "c_name": "__sbprintf"
+    },
+    {
+     "name": "vfiprintf;vfprintf",
+     "addr": "0x001A36A0",
+     "size": 120,
+     "matched": true,
+     "c_name": "vfprintf"
+    },
+    {
+     "name": "_vfprintf_r",
+     "addr": "0x001A3718",
+     "size": 5400,
+     "matched": true,
+     "c_name": "_vfprintf_r"
+    },
+    {
+     "name": "cvt",
+     "addr": "0x001A4C30",
+     "size": 432,
+     "matched": true,
+     "c_name": "cvt"
+    },
+    {
+     "name": "exponent",
+     "addr": "0x001A4DE0",
+     "size": 224,
+     "matched": true,
+     "c_name": "exponent"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "wsetup",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/wsetup.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A4EC0",
+    "code_end": "0x001A4FCC",
+    "end": "0x001A4FD0",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "__swsetup",
+     "addr": "0x001A4EC0",
+     "size": 268,
+     "matched": true,
+     "c_name": "__swsetup"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "dtoa",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/dtoa.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 2,
+   "total": 2,
+   "layout": {
+    "start": "0x001A4FD0",
+    "code_end": "0x001A63B4",
+    "end": "0x001A63B8",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "quorem",
+     "addr": "0x001A4FD0",
+     "size": 532,
+     "matched": true,
+     "c_name": "quorem"
+    },
+    {
+     "name": "_dtoa_r",
+     "addr": "0x001A51E8",
+     "size": 4556,
+     "matched": true,
+     "c_name": "_dtoa_r"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "fflush",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/fflush.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A63B8",
+    "code_end": "0x001A64BC",
+    "end": "0x001A64C0",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "fflush",
+     "addr": "0x001A63B8",
+     "size": 260,
+     "matched": true,
+     "c_name": "fflush"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "findfp",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/findfp.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": false,
+   "matched": 4,
+   "total": 5,
+   "layout": {
+    "start": "0x001A64C0",
+    "code_end": "0x001A6714",
+    "end": "0x001A6718",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "std",
+     "addr": "0x001A64C0",
+     "size": 88,
+     "matched": true,
+     "c_name": "std"
+    },
+    {
+     "name": "__sfmoreglue",
+     "addr": "0x001A6518",
+     "size": 112,
+     "matched": true,
+     "c_name": "__sfmoreglue"
+    },
+    {
+     "name": "__sfp",
+     "addr": "0x001A6588",
+     "size": 224,
+     "matched": true,
+     "c_name": "__sfp"
+    },
+    {
+     "name": "fn_001A6668",
+     "addr": "0x001A6668",
+     "size": 28,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "__sinit",
+     "addr": "0x001A6688",
+     "size": 140,
+     "matched": true,
+     "c_name": "__sinit"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "mallocr_free",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/mallocr_free.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 2,
+   "total": 2,
+   "layout": {
+    "start": "0x001A6718",
+    "code_end": "0x001A6BA4",
+    "end": "0x001A6BA8",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "_free_r",
+     "addr": "0x001A6718",
+     "size": 796,
+     "matched": true,
+     "c_name": "_free_r"
+    },
+    {
+     "name": "_malloc_trim_r",
+     "addr": "0x001A6A38",
+     "size": 364,
+     "matched": true,
+     "c_name": "_malloc_trim_r"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "fvwrite",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/fvwrite.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A6BA8",
+    "code_end": "0x001A6F80",
+    "end": "0x001A6F80",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__sfvwrite",
+     "addr": "0x001A6BA8",
+     "size": 984,
+     "matched": true,
+     "c_name": "__sfvwrite"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "fwalk",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/fwalk.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A6F80",
+    "code_end": "0x001A7014",
+    "end": "0x001A7018",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "_fwalk",
+     "addr": "0x001A6F80",
+     "size": 148,
+     "matched": true,
+     "c_name": "_fwalk"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "locale",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/locale.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 3,
+   "total": 3,
+   "layout": {
+    "start": "0x001A7018",
+    "code_end": "0x001A7104",
+    "end": "0x001A7108",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "_setlocale_r",
+     "addr": "0x001A7018",
+     "size": 132,
+     "matched": true,
+     "c_name": "_setlocale_r"
+    },
+    {
+     "name": "_findenv;calloc;fopen;memalign;realloc;setlocale;signal;strtod",
+     "addr": "0x001A70B0",
+     "size": 44,
+     "matched": true,
+     "c_name": "setlocale"
+    },
+    {
+     "name": "_init_signal;localeconv",
+     "addr": "0x001A70E0",
+     "size": 36,
+     "matched": true,
+     "c_name": "localeconv"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "makebuf",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/makebuf.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A7108",
+    "code_end": "0x001A7258",
+    "end": "0x001A7258",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__smakebuf",
+     "addr": "0x001A7108",
+     "size": 336,
+     "matched": true,
+     "c_name": "__smakebuf"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "mbtowc_r",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/mbtowc_r.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A7258",
+    "code_end": "0x001A7294",
+    "end": "0x001A7294",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "_mbtowc_r",
+     "addr": "0x001A7258",
+     "size": 60,
+     "matched": true,
+     "c_name": "_mbtowc_r"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "memchr",
+   "lib_version": "",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 1,
+   "layout": {
+    "start": "0x001A7294",
+    "code_end": "0x001A7374",
+    "end": "0x001A7374",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "memchr",
+     "addr": "0x001A7294",
+     "size": 224,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "memmove",
+   "lib_version": "",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 1,
+   "layout": {
+    "start": "0x001A7374",
+    "code_end": "0x001A7478",
+    "end": "0x001A7478",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "memmove",
+     "addr": "0x001A7374",
+     "size": 260,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "mprec",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/mprec.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 17,
+   "total": 17,
+   "layout": {
+    "start": "0x001A7478",
+    "code_end": "0x001A8494",
+    "end": "0x001A8498",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "_Balloc",
+     "addr": "0x001A7478",
+     "size": 168,
+     "matched": true,
+     "c_name": "_Balloc"
+    },
+    {
+     "name": "_Bfree",
+     "addr": "0x001A7520",
+     "size": 44,
+     "matched": true,
+     "c_name": "_Bfree"
+    },
+    {
+     "name": "_multadd",
+     "addr": "0x001A7550",
+     "size": 276,
+     "matched": true,
+     "c_name": "_multadd"
+    },
+    {
+     "name": "_s2b",
+     "addr": "0x001A7668",
+     "size": 328,
+     "matched": true,
+     "c_name": "_s2b"
+    },
+    {
+     "name": "_hi0bits",
+     "addr": "0x001A77B0",
+     "size": 132,
+     "matched": true,
+     "c_name": "_hi0bits"
+    },
+    {
+     "name": "_lo0bits",
+     "addr": "0x001A7838",
+     "size": 192,
+     "matched": true,
+     "c_name": "_lo0bits"
+    },
+    {
+     "name": "_i2b",
+     "addr": "0x001A78F8",
+     "size": 56,
+     "matched": true,
+     "c_name": "_i2b"
+    },
+    {
+     "name": "_multiply",
+     "addr": "0x001A7930",
+     "size": 556,
+     "matched": true,
+     "c_name": "_multiply"
+    },
+    {
+     "name": "_pow5mult",
+     "addr": "0x001A7B60",
+     "size": 256,
+     "matched": true,
+     "c_name": "_pow5mult"
+    },
+    {
+     "name": "_lshift",
+     "addr": "0x001A7C60",
+     "size": 376,
+     "matched": true,
+     "c_name": "_lshift"
+    },
+    {
+     "name": "__mcmp",
+     "addr": "0x001A7DD8",
+     "size": 104,
+     "matched": true,
+     "c_name": "__mcmp"
+    },
+    {
+     "name": "__mdiff",
+     "addr": "0x001A7E40",
+     "size": 400,
+     "matched": true,
+     "c_name": "__mdiff"
+    },
+    {
+     "name": "_ulp",
+     "addr": "0x001A7FD0",
+     "size": 152,
+     "matched": true,
+     "c_name": "_ulp"
+    },
+    {
+     "name": "_b2d",
+     "addr": "0x001A8068",
+     "size": 380,
+     "matched": true,
+     "c_name": "_b2d"
+    },
+    {
+     "name": "_d2b",
+     "addr": "0x001A81E8",
+     "size": 380,
+     "matched": true,
+     "c_name": "_d2b"
+    },
+    {
+     "name": "_ratio",
+     "addr": "0x001A8368",
+     "size": 192,
+     "matched": true,
+     "c_name": "_ratio"
+    },
+    {
+     "name": "_mprec_log10",
+     "addr": "0x001A8428",
+     "size": 108,
+     "matched": true,
+     "c_name": "_mprec_log10"
+    }
+   ]
+  },
+  {
+   "lib": "libm",
+   "object": "s_isinf",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libm/s_isinf.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libm",
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A8498",
+    "code_end": "0x001A84E0",
+    "end": "0x001A84E0",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "isinf",
+     "addr": "0x001A8498",
+     "size": 72,
+     "matched": true,
+     "c_name": "isinf"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "stdio",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/stdio.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 4,
+   "total": 4,
+   "layout": {
+    "start": "0x001A84E0",
+    "code_end": "0x001A8650",
+    "end": "0x001A8650",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__sread",
+     "addr": "0x001A84E0",
+     "size": 100,
+     "matched": true,
+     "c_name": "__sread"
+    },
+    {
+     "name": "__swrite",
+     "addr": "0x001A8548",
+     "size": 128,
+     "matched": true,
+     "c_name": "__swrite"
+    },
+    {
+     "name": "__sseek",
+     "addr": "0x001A85C8",
+     "size": 104,
+     "matched": true,
+     "c_name": "__sseek"
+    },
+    {
+     "name": "__sclose",
+     "addr": "0x001A8630",
+     "size": 32,
+     "matched": true,
+     "c_name": "__sclose"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "lseekr",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/lseekr.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": false,
+   "matched": 1,
+   "total": 3,
+   "layout": {
+    "start": "0x001A8650",
+    "code_end": "0x001A88E8",
+    "end": "0x001A8900",
+    "pad_bytes": 24
+   },
+   "functions": [
+    {
+     "name": "_lseek_r;_open_r;_read_r;_write_r",
+     "addr": "0x001A8650",
+     "size": 96,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_lseek_r;_open_r;_read_r;_write_r",
+     "addr": "0x001A8828",
+     "size": 96,
+     "matched": true,
+     "c_name": "_lseek_r"
+    },
+    {
+     "name": "_lseek_r;_open_r;_read_r;_write_r",
+     "addr": "0x001A8888",
+     "size": 96,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "mallocr_calloc",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/mallocr_calloc.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A86B0",
+    "code_end": "0x001A876C",
+    "end": "0x001A8770",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "_calloc_r",
+     "addr": "0x001A86B0",
+     "size": 188,
+     "matched": true,
+     "c_name": "_calloc_r"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "closer",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/closer.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A8770",
+    "code_end": "0x001A87C8",
+    "end": "0x001A87C8",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "_close_r",
+     "addr": "0x001A8770",
+     "size": 88,
+     "matched": true,
+     "c_name": "_close_r"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "fstatr",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libc/fstatr.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/newlib"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001A87C8",
+    "code_end": "0x001A8824",
+    "end": "0x001A8828",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "_fstat_r;_kill_r",
+     "addr": "0x001A87C8",
+     "size": 92,
+     "matched": true,
+     "c_name": "_fstat_r"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "klib",
+   "lib_version": "2300",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 131,
+   "layout": {
+    "start": "0x001A8900",
+    "code_end": "0x001A9978",
+    "end": "0x001A9978",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "RFU000_FullReset",
+     "addr": "0x001A8900",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "ResetEE",
+     "addr": "0x001A8910",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetGsCrt",
+     "addr": "0x001A8920",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU003",
+     "addr": "0x001A8930",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU005",
+     "addr": "0x001A8950",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU008",
+     "addr": "0x001A8980",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU009",
+     "addr": "0x001A8990",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "AddSbusIntcHandler",
+     "addr": "0x001A89A0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RemoveSbusIntcHandler",
+     "addr": "0x001A89B0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "Interrupt2Iop",
+     "addr": "0x001A89C0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetVTLBRefillHandler",
+     "addr": "0x001A89D0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetVCommonHandler",
+     "addr": "0x001A89E0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetVInterruptHandler",
+     "addr": "0x001A89F0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "AddIntcHandler;AddIntcHandler2",
+     "addr": "0x001A8A00",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "AddIntcHandler;AddIntcHandler2",
+     "addr": "0x001A8A10",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RemoveIntcHandler",
+     "addr": "0x001A8A20",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "AddDmacHandler;AddDmacHandler2",
+     "addr": "0x001A8A30",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "AddDmacHandler;AddDmacHandler2",
+     "addr": "0x001A8A40",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RemoveDmacHandler",
+     "addr": "0x001A8A50",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_EnableIntc",
+     "addr": "0x001A8A60",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_DisableIntc",
+     "addr": "0x001A8A70",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_EnableDmac",
+     "addr": "0x001A8A80",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_DisableDmac",
+     "addr": "0x001A8A90",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetAlarm",
+     "addr": "0x001A8AA0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "ReleaseAlarm",
+     "addr": "0x001A8AB0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_iEnableIntc",
+     "addr": "0x001A8AC0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_iDisableIntc",
+     "addr": "0x001A8AD0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_iEnableDmac",
+     "addr": "0x001A8AE0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_iDisableDmac",
+     "addr": "0x001A8AF0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iSetAlarm",
+     "addr": "0x001A8B00",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iReleaseAlarm",
+     "addr": "0x001A8B10",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "CreateThread",
+     "addr": "0x001A8B20",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "DeleteThread",
+     "addr": "0x001A8B30",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "StartThread;_StartThread",
+     "addr": "0x001A8B40",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "ExitThread",
+     "addr": "0x001A8B50",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "ExitDeleteThread",
+     "addr": "0x001A8B60",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "TerminateThread",
+     "addr": "0x001A8B70",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iTerminateThread",
+     "addr": "0x001A8B80",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "DisableDispatchThread",
+     "addr": "0x001A8B90",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "EnableDispatchThread",
+     "addr": "0x001A8BA0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "ChangeThreadPriority",
+     "addr": "0x001A8BB0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iChangeThreadPriority",
+     "addr": "0x001A8BC0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RotateThreadReadyQueue",
+     "addr": "0x001A8BD0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_iRotateThreadReadyQueue;iRotateThreadReadyQueue",
+     "addr": "0x001A8BE0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "ReleaseWaitThread",
+     "addr": "0x001A8BF0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iReleaseWaitThread",
+     "addr": "0x001A8C00",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "GetThreadId",
+     "addr": "0x001A8C10",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "ReferThreadStatus",
+     "addr": "0x001A8C20",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iReferThreadStatus",
+     "addr": "0x001A8C30",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SleepThread",
+     "addr": "0x001A8C40",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "WakeupThread",
+     "addr": "0x001A8C50",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_iWakeupThread;iWakeupThread",
+     "addr": "0x001A8C60",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "CancelWakeupThread",
+     "addr": "0x001A8C70",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iCancelWakeupThread",
+     "addr": "0x001A8C80",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SuspendThread",
+     "addr": "0x001A8C90",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_iSuspendThread;iSuspendThread",
+     "addr": "0x001A8CA0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "ResumeThread",
+     "addr": "0x001A8CB0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iResumeThread",
+     "addr": "0x001A8CC0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "JoinThread",
+     "addr": "0x001A8CD0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU060",
+     "addr": "0x001A8CE0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU061",
+     "addr": "0x001A8CF0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "EndOfHeap",
+     "addr": "0x001A8D00",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU063",
+     "addr": "0x001A8D10",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "CreateSema",
+     "addr": "0x001A8D20",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "DeleteSema",
+     "addr": "0x001A8D30",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SignalSema",
+     "addr": "0x001A8D40",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iSignalSema",
+     "addr": "0x001A8D50",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "WaitSema",
+     "addr": "0x001A8D60",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "PollSema",
+     "addr": "0x001A8D70",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iPollSema",
+     "addr": "0x001A8D80",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "ReferSemaStatus",
+     "addr": "0x001A8D90",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iReferSemaStatus",
+     "addr": "0x001A8DA0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU073",
+     "addr": "0x001A8DB0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetOsdConfigParam",
+     "addr": "0x001A8DC0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "GetOsdConfigParam",
+     "addr": "0x001A8DD0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "GetGsHParam",
+     "addr": "0x001A8DE0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "GetGsVParam",
+     "addr": "0x001A8DF0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetGsHParam",
+     "addr": "0x001A8E00",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetGsVParam",
+     "addr": "0x001A8E10",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU080_CreateEventFlag",
+     "addr": "0x001A8E20",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU081_DeleteEventFlag",
+     "addr": "0x001A8E30",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU082_SetEventFlag",
+     "addr": "0x001A8E40",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU083_iSetEventFlag",
+     "addr": "0x001A8E50",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU084_ClearEventFlag",
+     "addr": "0x001A8E60",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU085_iClearEventFlag;iPutTLBEntry",
+     "addr": "0x001A8E70",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU086_WaitEvnetFlag;SetTLBEntry;_SetTLBEntry",
+     "addr": "0x001A8E80",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU088_iPollEvnetFlag;iProbeTLBEntry",
+     "addr": "0x001A8EA0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU090_iReferEventFlagStatus",
+     "addr": "0x001A8EC0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "EnableIntcHandler",
+     "addr": "0x001A8EE0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iEnableIntcHandler",
+     "addr": "0x001A8EF0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "DisableIntcHandler",
+     "addr": "0x001A8F00",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iDisableIntcHandler",
+     "addr": "0x001A8F10",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "EnableDmacHandler",
+     "addr": "0x001A8F20",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iEnableDmacHandler",
+     "addr": "0x001A8F30",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "DisableDmacHandler",
+     "addr": "0x001A8F40",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iDisableDmacHandler",
+     "addr": "0x001A8F50",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "KSeg0",
+     "addr": "0x001A8F60",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "EnableCache",
+     "addr": "0x001A8F70",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "DisableCache",
+     "addr": "0x001A8F80",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "GetCop0",
+     "addr": "0x001A8F90",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "FlushCache",
+     "addr": "0x001A8FA0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "CpuConfig",
+     "addr": "0x001A8FB0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iGetCop0",
+     "addr": "0x001A8FC0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iFlushCache",
+     "addr": "0x001A8FD0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iCpuConfig",
+     "addr": "0x001A8FE0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "sceSifStopDma",
+     "addr": "0x001A8FF0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetCPUTimerHandler",
+     "addr": "0x001A9000",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetCPUTimer",
+     "addr": "0x001A9010",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "ForceRead;SetOsdConfigParam2",
+     "addr": "0x001A9020",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "ForceWrite;GetOsdConfigParam2",
+     "addr": "0x001A9030",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "GsGetIMR",
+     "addr": "0x001A9040",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iGsGetIMR",
+     "addr": "0x001A9050",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "GsPutIMR",
+     "addr": "0x001A9060",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "iGsPutIMR",
+     "addr": "0x001A9070",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetPgifHandler",
+     "addr": "0x001A9080",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "SetVSyncFlag",
+     "addr": "0x001A9090",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU116;setup",
+     "addr": "0x001A90A0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_print;print",
+     "addr": "0x001A90B0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "sceSifDmaStat",
+     "addr": "0x001A90C0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "isceSifDmaStat",
+     "addr": "0x001A90D0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_sceSifSetDma;sceSifSetDma",
+     "addr": "0x001A90E0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "_isceSifSetDma;isceSifSetDma",
+     "addr": "0x001A90F0",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "sceSifSetDChain",
+     "addr": "0x001A9100",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "isceSifSetDChain",
+     "addr": "0x001A9110",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "sceSifSetReg",
+     "addr": "0x001A9120",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "sceSifGetReg",
+     "addr": "0x001A9130",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "Deci2Call",
+     "addr": "0x001A9150",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "PSMode",
+     "addr": "0x001A9160",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "MachineType",
+     "addr": "0x001A9170",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "GetMemorySize",
+     "addr": "0x001A9180",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "RFU116;setup",
+     "addr": "0x001A9968",
+     "size": 16,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "exit",
+   "lib_version": "2300",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 4,
+   "layout": {
+    "start": "0x001A8940",
+    "code_end": "0x001A9150",
+    "end": "0x001A9150",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "Exit;_Exit",
+     "addr": "0x001A8940",
+     "size": 16,
+     "matched": false,
+     "c_name": "Exit"
+    },
+    {
+     "name": "LoadExecPS2;_LoadExecPS2",
+     "addr": "0x001A8960",
+     "size": 16,
+     "matched": false,
+     "c_name": "LoadExecPS2"
+    },
+    {
+     "name": "ExecPS2;_ExecPS2",
+     "addr": "0x001A8970",
+     "size": 16,
+     "matched": false,
+     "c_name": "ExecPS2"
+    },
+    {
+     "name": "ExecOSD;_ExecOSD",
+     "addr": "0x001A9140",
+     "size": 16,
+     "matched": false,
+     "c_name": "ExecOSD"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "tlbfunc",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/tlbfunc.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 3,
+   "total": 3,
+   "layout": {
+    "start": "0x001A8E90",
+    "code_end": "0x001A8EE0",
+    "end": "0x001A8EE0",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "GetTLBEntry;RFU087_PollEvnetFlag",
+     "addr": "0x001A8E90",
+     "size": 16,
+     "matched": true,
+     "c_name": "GetTLBEntry"
+    },
+    {
+     "name": "ExpandScratchPad;RFU089_ReferEventFlagStatus",
+     "addr": "0x001A8EB0",
+     "size": 16,
+     "matched": true,
+     "c_name": "ExpandScratchPad"
+    },
+    {
+     "name": "GetEntryAddress;RFU091",
+     "addr": "0x001A8ED0",
+     "size": 16,
+     "matched": true,
+     "c_name": "tlbfunc_GetEntryAddress"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "glue",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/glue.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 16,
+   "total": 16,
+   "layout": {
+    "start": "0x001A9190",
+    "code_end": "0x001A94C8",
+    "end": "0x001A94C8",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "sceResetttyinit",
+     "addr": "0x001A9190",
+     "size": 12,
+     "matched": true,
+     "c_name": "sceResetttyinit"
+    },
+    {
+     "name": "VSync",
+     "addr": "0x001A91A0",
+     "size": 64,
+     "matched": true,
+     "c_name": "VSync"
+    },
+    {
+     "name": "VSync2",
+     "addr": "0x001A91E0",
+     "size": 96,
+     "matched": true,
+     "c_name": "VSync2"
+    },
+    {
+     "name": "write",
+     "addr": "0x001A9240",
+     "size": 124,
+     "matched": true,
+     "c_name": "write"
+    },
+    {
+     "name": "read",
+     "addr": "0x001A92C0",
+     "size": 116,
+     "matched": true,
+     "c_name": "read"
+    },
+    {
+     "name": "open;stat;unlink",
+     "addr": "0x001A9338",
+     "size": 40,
+     "matched": true,
+     "c_name": "open"
+    },
+    {
+     "name": "close;ioctl;lseek",
+     "addr": "0x001A9360",
+     "size": 8,
+     "matched": true,
+     "c_name": "close"
+    },
+    {
+     "name": "close;ioctl;lseek",
+     "addr": "0x001A9368",
+     "size": 8,
+     "matched": true,
+     "c_name": "ioctl"
+    },
+    {
+     "name": "close;ioctl;lseek",
+     "addr": "0x001A9370",
+     "size": 8,
+     "matched": true,
+     "c_name": "lseek"
+    },
+    {
+     "name": "sbrk",
+     "addr": "0x001A9378",
+     "size": 172,
+     "matched": true,
+     "c_name": "sbrk"
+    },
+    {
+     "name": "getpid;isatty",
+     "addr": "0x001A9428",
+     "size": 8,
+     "matched": true,
+     "c_name": "isatty"
+    },
+    {
+     "name": "fstat",
+     "addr": "0x001A9430",
+     "size": 20,
+     "matched": true,
+     "c_name": "fstat"
+    },
+    {
+     "name": "getpid;isatty",
+     "addr": "0x001A9448",
+     "size": 8,
+     "matched": true,
+     "c_name": "getpid"
+    },
+    {
+     "name": "kill",
+     "addr": "0x001A9450",
+     "size": 40,
+     "matched": true,
+     "c_name": "kill"
+    },
+    {
+     "name": "open;stat;unlink",
+     "addr": "0x001A9478",
+     "size": 40,
+     "matched": true,
+     "c_name": "stat"
+    },
+    {
+     "name": "open;stat;unlink",
+     "addr": "0x001A94A0",
+     "size": 40,
+     "matched": true,
+     "c_name": "unlink"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "cache",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/cache.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": false,
+   "matched": 4,
+   "total": 6,
+   "layout": {
+    "start": "0x001A94C8",
+    "code_end": "0x001A9744",
+    "end": "0x001A9748",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "_sceSDC",
+     "addr": "0x001A94C8",
+     "size": 164,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "InvalidDCache;SyncDCache",
+     "addr": "0x001A9570",
+     "size": 124,
+     "matched": true,
+     "c_name": "SyncDCache"
+    },
+    {
+     "name": "iInvalidDCache;iSyncDCache",
+     "addr": "0x001A95F0",
+     "size": 20,
+     "matched": true,
+     "c_name": "iSyncDCache"
+    },
+    {
+     "name": "_sceIDC",
+     "addr": "0x001A9608",
+     "size": 164,
+     "matched": false,
+     "c_name": null
+    },
+    {
+     "name": "InvalidDCache;SyncDCache",
+     "addr": "0x001A96B0",
+     "size": 124,
+     "matched": true,
+     "c_name": "InvalidDCache"
+    },
+    {
+     "name": "iInvalidDCache;iSyncDCache",
+     "addr": "0x001A9730",
+     "size": 20,
+     "matched": true,
+     "c_name": "iInvalidDCache"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "intr",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/intr.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 8,
+   "total": 8,
+   "layout": {
+    "start": "0x001A9748",
+    "code_end": "0x001A9968",
+    "end": "0x001A9968",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "DisableDmac;DisableIntc;EnableDmac;EnableIntc;ReleaseAlarm",
+     "addr": "0x001A9748",
+     "size": 104,
+     "matched": true,
+     "c_name": "DisableIntc"
+    },
+    {
+     "name": "DisableDmac;DisableIntc;EnableDmac;EnableIntc;ReleaseAlarm",
+     "addr": "0x001A97B0",
+     "size": 104,
+     "matched": true,
+     "c_name": "EnableIntc"
+    },
+    {
+     "name": "DisableDmac;DisableIntc;EnableDmac;EnableIntc;ReleaseAlarm",
+     "addr": "0x001A9818",
+     "size": 104,
+     "matched": true,
+     "c_name": "DisableDmac"
+    },
+    {
+     "name": "DisableDmac;DisableIntc;EnableDmac;EnableIntc;ReleaseAlarm",
+     "addr": "0x001A9880",
+     "size": 104,
+     "matched": true,
+     "c_name": "EnableDmac"
+    },
+    {
+     "name": "iDisableDmac;iDisableIntc;iEnableDmac;iEnableIntc;iReleaseAlarm",
+     "addr": "0x001A98E8",
+     "size": 32,
+     "matched": true,
+     "c_name": "iEnableIntc"
+    },
+    {
+     "name": "iDisableDmac;iDisableIntc;iEnableDmac;iEnableIntc;iReleaseAlarm",
+     "addr": "0x001A9908",
+     "size": 32,
+     "matched": true,
+     "c_name": "iDisableIntc"
+    },
+    {
+     "name": "iDisableDmac;iDisableIntc;iEnableDmac;iEnableIntc;iReleaseAlarm",
+     "addr": "0x001A9928",
+     "size": 32,
+     "matched": true,
+     "c_name": "iEnableDmac"
+    },
+    {
+     "name": "iDisableDmac;iDisableIntc;iEnableDmac;iEnableIntc;iReleaseAlarm",
+     "addr": "0x001A9948",
+     "size": 32,
+     "matched": true,
+     "c_name": "iDisableDmac"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "alarm",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/alarm.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 3,
+   "total": 3,
+   "layout": {
+    "start": "0x001A9988",
+    "code_end": "0x001A9AA4",
+    "end": "0x001A9AA8",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "kCopy",
+     "addr": "0x001A9988",
+     "size": 56,
+     "matched": true,
+     "c_name": "kCopy"
+    },
+    {
+     "name": "GetEntryAddress;RFU091",
+     "addr": "0x001A99C0",
+     "size": 16,
+     "matched": true,
+     "c_name": "GetEntryAddress"
+    },
+    {
+     "name": "InitAlarm",
+     "addr": "0x001A99D0",
+     "size": 212,
+     "matched": true,
+     "c_name": "InitAlarm"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "thread",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/thread.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 5,
+   "total": 5,
+   "layout": {
+    "start": "0x001A9AA8",
+    "code_end": "0x001A9E08",
+    "end": "0x001A9E08",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "topThread",
+     "addr": "0x001A9AA8",
+     "size": 212,
+     "matched": true,
+     "c_name": "topThread"
+    },
+    {
+     "name": "InitThread",
+     "addr": "0x001A9B80",
+     "size": 212,
+     "matched": true,
+     "c_name": "InitThread"
+    },
+    {
+     "name": "iWakeupThread",
+     "addr": "0x001A9C58",
+     "size": 148,
+     "matched": true,
+     "c_name": "iWakeupThread"
+    },
+    {
+     "name": "iRotateThreadReadyQueue",
+     "addr": "0x001A9CF0",
+     "size": 124,
+     "matched": true,
+     "c_name": "iRotateThreadReadyQueue"
+    },
+    {
+     "name": "iSuspendThread",
+     "addr": "0x001A9D70",
+     "size": 152,
+     "matched": true,
+     "c_name": "iSuspendThread"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "tty",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/tty.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 7,
+   "total": 7,
+   "layout": {
+    "start": "0x001A9E08",
+    "code_end": "0x001AA324",
+    "end": "0x001AA328",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "QueueInit",
+     "addr": "0x001A9E08",
+     "size": 36,
+     "matched": true,
+     "c_name": "QueueInit"
+    },
+    {
+     "name": "QueuePeekWriteDone",
+     "addr": "0x001A9E30",
+     "size": 60,
+     "matched": true,
+     "c_name": "QueuePeekWriteDone"
+    },
+    {
+     "name": "QueuePeekReadDone",
+     "addr": "0x001A9E70",
+     "size": 60,
+     "matched": true,
+     "c_name": "QueuePeekReadDone"
+    },
+    {
+     "name": "sceTtyHandler",
+     "addr": "0x001A9EB0",
+     "size": 404,
+     "matched": true,
+     "c_name": "sceTtyHandler"
+    },
+    {
+     "name": "sceTtyWrite",
+     "addr": "0x001AA048",
+     "size": 336,
+     "matched": true,
+     "c_name": "sceTtyWrite"
+    },
+    {
+     "name": "sceTtyRead",
+     "addr": "0x001AA198",
+     "size": 208,
+     "matched": true,
+     "c_name": "sceTtyRead"
+    },
+    {
+     "name": "sceTtyInit",
+     "addr": "0x001AA268",
+     "size": 188,
+     "matched": true,
+     "c_name": "sceTtyInit"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "kprintf",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/kprintf.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 8,
+   "total": 8,
+   "layout": {
+    "start": "0x001AA328",
+    "code_end": "0x001AACA0",
+    "end": "0x001AACA0",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "kputchar",
+     "addr": "0x001AA328",
+     "size": 56,
+     "matched": true,
+     "c_name": "kputchar"
+    },
+    {
+     "name": "deci2Putchar",
+     "addr": "0x001AA360",
+     "size": 176,
+     "matched": true,
+     "c_name": "deci2Putchar"
+    },
+    {
+     "name": "serialPutchar",
+     "addr": "0x001AA410",
+     "size": 52,
+     "matched": true,
+     "c_name": "serialPutchar"
+    },
+    {
+     "name": "ftoi",
+     "addr": "0x001AA448",
+     "size": 144,
+     "matched": true,
+     "c_name": "ftoi"
+    },
+    {
+     "name": "printfloat",
+     "addr": "0x001AA4D8",
+     "size": 360,
+     "matched": true,
+     "c_name": "printfloat"
+    },
+    {
+     "name": "_printf",
+     "addr": "0x001AA640",
+     "size": 1480,
+     "matched": true,
+     "c_name": "_printf"
+    },
+    {
+     "name": "kprintf",
+     "addr": "0x001AAC08",
+     "size": 56,
+     "matched": true,
+     "c_name": "kprintf"
+    },
+    {
+     "name": "scePrintf",
+     "addr": "0x001AAC40",
+     "size": 96,
+     "matched": true,
+     "c_name": "scePrintf"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "sifcmd",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/sifcmd.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": false,
+   "matched": 14,
+   "total": 15,
+   "layout": {
+    "start": "0x001AACA0",
+    "code_end": "0x001AB3E8",
+    "end": "0x001AB3E8",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "_set_sreg",
+     "addr": "0x001AACA0",
+     "size": 28,
+     "matched": true,
+     "c_name": "_set_sreg"
+    },
+    {
+     "name": "_change_addr",
+     "addr": "0x001AACC0",
+     "size": 12,
+     "matched": true,
+     "c_name": "_change_addr"
+    },
+    {
+     "name": "sceSifGetSreg",
+     "addr": "0x001AACD0",
+     "size": 24,
+     "matched": true,
+     "c_name": "sceSifGetSreg"
+    },
+    {
+     "name": "sceSifSetSreg",
+     "addr": "0x001AACE8",
+     "size": 28,
+     "matched": true,
+     "c_name": "sceSifSetSreg"
+    },
+    {
+     "name": "sceSifInitCmd",
+     "addr": "0x001AAD18",
+     "size": 640,
+     "matched": true,
+     "c_name": "sceSifInitCmd"
+    },
+    {
+     "name": "sceSifExitCmd",
+     "addr": "0x001AAF98",
+     "size": 52,
+     "matched": true,
+     "c_name": "sceSifExitCmd"
+    },
+    {
+     "name": "sceSifSetCmdBuffer",
+     "addr": "0x001AAFD0",
+     "size": 24,
+     "matched": true,
+     "c_name": "sceSifSetCmdBuffer"
+    },
+    {
+     "name": "sceSifSetSysCmdBuffer",
+     "addr": "0x001AAFE8",
+     "size": 24,
+     "matched": true,
+     "c_name": "sceSifSetSysCmdBuffer"
+    },
+    {
+     "name": "sceSifAddCmdHandler",
+     "addr": "0x001AB000",
+     "size": 44,
+     "matched": true,
+     "c_name": "sceSifAddCmdHandler"
+    },
+    {
+     "name": "sceSifRemoveCmdHandler",
+     "addr": "0x001AB030",
+     "size": 40,
+     "matched": true,
+     "c_name": "sceSifRemoveCmdHandler"
+    },
+    {
+     "name": "_sceSifSendCmd",
+     "addr": "0x001AB058",
+     "size": 308,
+     "matched": true,
+     "c_name": "_sceSifSendCmd"
+    },
+    {
+     "name": "sceSifSendCmd",
+     "addr": "0x001AB190",
+     "size": 60,
+     "matched": true,
+     "c_name": "sceSifSendCmd"
+    },
+    {
+     "name": "isceSifSendCmd",
+     "addr": "0x001AB1D0",
+     "size": 60,
+     "matched": true,
+     "c_name": "isceSifSendCmd"
+    },
+    {
+     "name": "_sceSifCmdIntrHdlr",
+     "addr": "0x001AB210",
+     "size": 296,
+     "matched": true,
+     "c_name": "_sceSifCmdIntrHdlr"
+    },
+    {
+     "name": "sceSifWriteBackDCache",
+     "addr": "0x001AB338",
+     "size": 176,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "sifrpc",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/sifrpc.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 22,
+   "total": 22,
+   "layout": {
+    "start": "0x001AB3E8",
+    "code_end": "0x001AC344",
+    "end": "0x001AC348",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sceSifInitRpc",
+     "addr": "0x001AB3E8",
+     "size": 412,
+     "matched": true,
+     "c_name": "sceSifInitRpc"
+    },
+    {
+     "name": "sceSifExitRpc",
+     "addr": "0x001AB588",
+     "size": 36,
+     "matched": true,
+     "c_name": "sceSifExitRpc"
+    },
+    {
+     "name": "_sceRpcGetPacket",
+     "addr": "0x001AB5B0",
+     "size": 168,
+     "matched": true,
+     "c_name": "_sceRpcGetPacket"
+    },
+    {
+     "name": "_sceRpcFreePacket",
+     "addr": "0x001AB658",
+     "size": 28,
+     "matched": true,
+     "c_name": "_sceRpcFreePacket"
+    },
+    {
+     "name": "_sceRpcGetFPacket",
+     "addr": "0x001AB678",
+     "size": 48,
+     "matched": true,
+     "c_name": "_sceRpcGetFPacket"
+    },
+    {
+     "name": "_sceRpcGetFPacket2",
+     "addr": "0x001AB6A8",
+     "size": 64,
+     "matched": true,
+     "c_name": "_sceRpcGetFPacket2"
+    },
+    {
+     "name": "_request_end",
+     "addr": "0x001AB6E8",
+     "size": 180,
+     "matched": true,
+     "c_name": "_request_end"
+    },
+    {
+     "name": "_request_rdata",
+     "addr": "0x001AB7A0",
+     "size": 96,
+     "matched": true,
+     "c_name": "_request_rdata"
+    },
+    {
+     "name": "sceSifGetOtherData",
+     "addr": "0x001AB800",
+     "size": 344,
+     "matched": true,
+     "c_name": "sceSifGetOtherData"
+    },
+    {
+     "name": "_search_svdata",
+     "addr": "0x001AB958",
+     "size": 76,
+     "matched": true,
+     "c_name": "_search_svdata"
+    },
+    {
+     "name": "_request_bind",
+     "addr": "0x001AB9A8",
+     "size": 176,
+     "matched": true,
+     "c_name": "_request_bind"
+    },
+    {
+     "name": "sceSifBindRpc",
+     "addr": "0x001ABA58",
+     "size": 320,
+     "matched": true,
+     "c_name": "sceSifBindRpc"
+    },
+    {
+     "name": "_request_call",
+     "addr": "0x001ABB98",
+     "size": 140,
+     "matched": true,
+     "c_name": "_request_call"
+    },
+    {
+     "name": "sceSifCallRpc",
+     "addr": "0x001ABC28",
+     "size": 492,
+     "matched": true,
+     "c_name": "sceSifCallRpc"
+    },
+    {
+     "name": "sceSifCheckStatRpc",
+     "addr": "0x001ABE18",
+     "size": 60,
+     "matched": true,
+     "c_name": "sceSifCheckStatRpc"
+    },
+    {
+     "name": "sceSifSetRpcQueue",
+     "addr": "0x001ABE58",
+     "size": 148,
+     "matched": true,
+     "c_name": "sceSifSetRpcQueue"
+    },
+    {
+     "name": "sceSifRegisterRpc",
+     "addr": "0x001ABEF0",
+     "size": 208,
+     "matched": true,
+     "c_name": "sceSifRegisterRpc"
+    },
+    {
+     "name": "sceSifRemoveRpc",
+     "addr": "0x001ABFC0",
+     "size": 148,
+     "matched": true,
+     "c_name": "sceSifRemoveRpc"
+    },
+    {
+     "name": "sceSifRemoveRpcQueue",
+     "addr": "0x001AC058",
+     "size": 144,
+     "matched": true,
+     "c_name": "sceSifRemoveRpcQueue"
+    },
+    {
+     "name": "sceSifGetNextRequest",
+     "addr": "0x001AC0E8",
+     "size": 88,
+     "matched": true,
+     "c_name": "sceSifGetNextRequest"
+    },
+    {
+     "name": "sceSifExecRequest",
+     "addr": "0x001AC140",
+     "size": 452,
+     "matched": true,
+     "c_name": "sceSifExecRequest"
+    },
+    {
+     "name": "sceSifRpcLoop",
+     "addr": "0x001AC308",
+     "size": 60,
+     "matched": true,
+     "c_name": "sceSifRpcLoop"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "eeloadfile",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/eeloadfile.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 16,
+   "total": 16,
+   "layout": {
+    "start": "0x001AF8C0",
+    "code_end": "0x001B061C",
+    "end": "0x001B0620",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "_lf_bind",
+     "addr": "0x001AF8C0",
+     "size": 256,
+     "matched": true,
+     "c_name": "_lf_bind"
+    },
+    {
+     "name": "sceSifLoadFileReset",
+     "addr": "0x001AFA50",
+     "size": 56,
+     "matched": true,
+     "c_name": "sceSifLoadFileReset"
+    },
+    {
+     "name": "_sceSifLoadModuleBuffer",
+     "addr": "0x001AFA88",
+     "size": 520,
+     "matched": true,
+     "c_name": "_sceSifLoadModuleBuffer"
+    },
+    {
+     "name": "sceSifStopModule",
+     "addr": "0x001AFC90",
+     "size": 520,
+     "matched": true,
+     "c_name": "sceSifStopModule"
+    },
+    {
+     "name": "sceSifUnloadModule",
+     "addr": "0x001AFE98",
+     "size": 144,
+     "matched": true,
+     "c_name": "sceSifUnloadModule"
+    },
+    {
+     "name": "sceSifSearchModuleByName",
+     "addr": "0x001AFF28",
+     "size": 160,
+     "matched": true,
+     "c_name": "sceSifSearchModuleByName"
+    },
+    {
+     "name": "sceSifSearchModuleByAddress",
+     "addr": "0x001AFFC8",
+     "size": 144,
+     "matched": true,
+     "c_name": "sceSifSearchModuleByAddress"
+    },
+    {
+     "name": "sceSifLoadModuleBuffer",
+     "addr": "0x001B0058",
+     "size": 28,
+     "matched": true,
+     "c_name": "sceSifLoadModuleBuffer"
+    },
+    {
+     "name": "_sceSifLoadModule",
+     "addr": "0x001B0098",
+     "size": 548,
+     "matched": true,
+     "c_name": "_sceSifLoadModule"
+    },
+    {
+     "name": "sceSifLoadModule",
+     "addr": "0x001B02C0",
+     "size": 32,
+     "matched": true,
+     "c_name": "sceSifLoadModule"
+    },
+    {
+     "name": "sceSifLoadStartModule",
+     "addr": "0x001B02E0",
+     "size": 28,
+     "matched": true,
+     "c_name": "sceSifLoadStartModule"
+    },
+    {
+     "name": "_sceSifLoadElfPart",
+     "addr": "0x001B0300",
+     "size": 260,
+     "matched": true,
+     "c_name": "_sceSifLoadElfPart"
+    },
+    {
+     "name": "sceSifLoadElfPart",
+     "addr": "0x001B0408",
+     "size": 28,
+     "matched": true,
+     "c_name": "sceSifLoadElfPart"
+    },
+    {
+     "name": "sceSifLoadElf",
+     "addr": "0x001B0428",
+     "size": 40,
+     "matched": true,
+     "c_name": "sceSifLoadElf"
+    },
+    {
+     "name": "sceSifGetIopAddr",
+     "addr": "0x001B0450",
+     "size": 236,
+     "matched": true,
+     "c_name": "sceSifGetIopAddr"
+    },
+    {
+     "name": "sceSifSetIopAddr",
+     "addr": "0x001B0540",
+     "size": 220,
+     "matched": true,
+     "c_name": "sceSifSetIopAddr"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "iopreset",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/iopreset.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 4,
+   "total": 4,
+   "layout": {
+    "start": "0x001B0620",
+    "code_end": "0x001B08D0",
+    "end": "0x001B08D0",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "sceSifResetIop",
+     "addr": "0x001B0620",
+     "size": 316,
+     "matched": true,
+     "c_name": "sceSifResetIop"
+    },
+    {
+     "name": "sceSifIsAliveIop",
+     "addr": "0x001B0760",
+     "size": 40,
+     "matched": true,
+     "c_name": "sceSifIsAliveIop"
+    },
+    {
+     "name": "sceSifSyncIop",
+     "addr": "0x001B0788",
+     "size": 56,
+     "matched": true,
+     "c_name": "sceSifSyncIop"
+    },
+    {
+     "name": "sceSifRebootIop",
+     "addr": "0x001B07C0",
+     "size": 272,
+     "matched": true,
+     "c_name": "sceSifRebootIop"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "diei",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/diei.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 2,
+   "total": 2,
+   "layout": {
+    "start": "0x001B08D0",
+    "code_end": "0x001B0930",
+    "end": "0x001B0930",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "DIntr",
+     "addr": "0x001B08D0",
+     "size": 72,
+     "matched": true,
+     "c_name": "DIntr"
+    },
+    {
+     "name": "EIntr",
+     "addr": "0x001B0918",
+     "size": 24,
+     "matched": true,
+     "c_name": "EIntr"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "initsys",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/initsys.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 2,
+   "total": 2,
+   "layout": {
+    "start": "0x001B0930",
+    "code_end": "0x001B099C",
+    "end": "0x001B09A0",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "supplement_crt0",
+     "addr": "0x001B0930",
+     "size": 72,
+     "matched": true,
+     "c_name": "supplement_crt0"
+    },
+    {
+     "name": "_InitSys",
+     "addr": "0x001B0978",
+     "size": 36,
+     "matched": true,
+     "c_name": "_InitSys"
+    }
+   ]
+  },
+  {
+   "lib": "libkernl",
+   "object": "deci2",
+   "lib_version": "2300",
+   "source": "libs/sony-sdk/src/libkernl/deci2.c",
+   "profile": {
+    "name": "sce-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3",
+    "assembler": "ee-gcc2.96/ee/bin/as -EL -mabi=eabi",
+    "defines": {
+     "SCE_SDK": "0x2300"
+    },
+    "include": [
+     "libs/sony-sdk/include/sce"
+    ]
+   },
+   "complete": true,
+   "matched": 10,
+   "total": 10,
+   "layout": {
+    "start": "0x001B09A0",
+    "code_end": "0x001B0B7C",
+    "end": "0x001B0B80",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "sceDeci2Open",
+     "addr": "0x001B09A0",
+     "size": 68,
+     "matched": true,
+     "c_name": "sceDeci2Open"
+    },
+    {
+     "name": "sceDeci2Close",
+     "addr": "0x001B09E8",
+     "size": 36,
+     "matched": true,
+     "c_name": "sceDeci2Close"
+    },
+    {
+     "name": "sceDeci2ReqSend",
+     "addr": "0x001B0A10",
+     "size": 48,
+     "matched": true,
+     "c_name": "sceDeci2ReqSend"
+    },
+    {
+     "name": "sceDeci2Poll",
+     "addr": "0x001B0A40",
+     "size": 36,
+     "matched": true,
+     "c_name": "sceDeci2Poll"
+    },
+    {
+     "name": "sceDeci2ExRecv",
+     "addr": "0x001B0A68",
+     "size": 52,
+     "matched": true,
+     "c_name": "sceDeci2ExRecv"
+    },
+    {
+     "name": "sceDeci2ExSend",
+     "addr": "0x001B0AA0",
+     "size": 52,
+     "matched": true,
+     "c_name": "sceDeci2ExSend"
+    },
+    {
+     "name": "sceDeci2ExReqSend",
+     "addr": "0x001B0AD8",
+     "size": 48,
+     "matched": true,
+     "c_name": "sceDeci2ExReqSend"
+    },
+    {
+     "name": "sceDeci2ExLock",
+     "addr": "0x001B0B08",
+     "size": 36,
+     "matched": true,
+     "c_name": "sceDeci2ExLock"
+    },
+    {
+     "name": "sceDeci2ExUnLock",
+     "addr": "0x001B0B30",
+     "size": 36,
+     "matched": true,
+     "c_name": "sceDeci2ExUnLock"
+    },
+    {
+     "name": "kputs",
+     "addr": "0x001B0B58",
+     "size": 36,
+     "matched": true,
+     "c_name": "kputs"
+    }
+   ]
+  },
+  {
+   "lib": "libgcc",
+   "object": "_fixunsdfdi",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libgcc/_fixunsdfdi.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libgcc"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001B0B80",
+    "code_end": "0x001B0C6C",
+    "end": "0x001B0C70",
+    "pad_bytes": 4
+   },
+   "functions": [
+    {
+     "name": "__fixunsdfdi",
+     "addr": "0x001B0B80",
+     "size": 236,
+     "matched": true,
+     "c_name": "__fixunsdfdi"
+    }
+   ]
+  },
+  {
+   "lib": "libgcc",
+   "object": "_floatdidf",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libgcc/_floatdidf.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libgcc"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001B0C70",
+    "code_end": "0x001B0D08",
+    "end": "0x001B0D08",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__floatdidf",
+     "addr": "0x001B0C70",
+     "size": 152,
+     "matched": true,
+     "c_name": "__floatdidf"
+    }
+   ]
+  },
+  {
+   "lib": "libgcc",
+   "object": "_udivdi3",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libgcc/_udivdi3.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libgcc"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001B0D08",
+    "code_end": "0x001B12D8",
+    "end": "0x001B12D8",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__udivdi3",
+     "addr": "0x001B0D08",
+     "size": 1488,
+     "matched": true,
+     "c_name": "__udivdi3"
+    }
+   ]
+  },
+  {
+   "lib": "libgcc",
+   "object": "_umoddi3",
+   "lib_version": "",
+   "source": "libs/sony-sdk/src/libgcc/_umoddi3.c",
+   "profile": {
+    "name": "rt-991111",
+    "cc": "ee-gcc2.9-991111 (cc1 2.9-ee-991111)",
+    "cflags": "-O2 -G0 -mips3 -fno-builtin",
+    "assembler": "ee-gcc2.9-991111/ee/bin/as -EL -mabi=eabi",
+    "defines": {},
+    "include": [
+     "libs/sony-sdk/include/libgcc"
+    ]
+   },
+   "complete": true,
+   "matched": 1,
+   "total": 1,
+   "layout": {
+    "start": "0x001B12D8",
+    "code_end": "0x001B1818",
+    "end": "0x001B1818",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "__umoddi3",
+     "addr": "0x001B12D8",
+     "size": 1344,
+     "matched": true,
+     "c_name": "__umoddi3"
+    }
+   ]
+  },
+  {
+   "lib": "libc",
+   "object": "memcmp",
+   "lib_version": "",
+   "source": null,
+   "profile": null,
+   "complete": false,
+   "matched": 0,
+   "total": 1,
+   "layout": {
+    "start": "0x001B1818",
+    "code_end": "0x001B18AC",
+    "end": "0x001B18AC",
+    "pad_bytes": 0
+   },
+   "functions": [
+    {
+     "name": "memcmp",
+     "addr": "0x001B1818",
+     "size": 148,
+     "matched": false,
+     "c_name": null
+    }
+   ]
+  }
+ ],
+ "unassigned": [
+  {
+   "name": "fn_00197050",
+   "addr": "0x00197050",
+   "size": 8,
+   "lib": "unknown",
+   "matched": false,
+   "source": null,
+   "c_name": null
+  },
+  {
+   "name": "fn_0019F8E8",
+   "addr": "0x0019F8E8",
+   "size": 84,
+   "lib": "unknown",
+   "matched": false,
+   "source": null,
+   "c_name": null
+  },
+  {
+   "name": "fn_0019F940",
+   "addr": "0x0019F940",
+   "size": 208,
+   "lib": "unknown",
+   "matched": false,
+   "source": null,
+   "c_name": null
+  },
+  {
+   "name": "__sceKernlGetEhSemaId",
+   "addr": "0x001A2180",
+   "size": 12,
+   "lib": "libkernl",
+   "matched": false,
+   "source": null,
+   "c_name": null
+  },
+  {
+   "name": "Copy",
+   "addr": "0x001A9978",
+   "size": 16,
+   "lib": "libkernl",
+   "matched": true,
+   "source": "src/libkernl/alarm.c",
+   "c_name": "Copy"
+  },
+  {
+   "name": "isceGsGetIMR;sceGsGetIMR",
+   "addr": "0x001B0078",
+   "size": 28,
+   "lib": "libgraph",
+   "matched": false,
+   "source": null,
+   "c_name": null
+  }
+ ]
+}
